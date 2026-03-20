@@ -1,0 +1,183 @@
+# 20260320
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - Generative AI-assisted Participatory Modeling in Socio-Environmental Planning under Deep Uncertainty [PDF](https://arxiv.org/pdf/2603.17021), [HTML](https://arxiv.org/abs/2603.17021)
+### Authors
+Zhihao Pei,Nir Lipovetzky,Angela M. Rojas-Arevalo,Fjalar J. de Haan,Enayat A. Moallemi
+### Background
+在深度不确定性下的社会环境规划需要研究者在探索政策和部署计划之前识别和概念化问题。传统的规划方法和基于模型的规划方法依赖于参与式建模来将利益相关者的自然语言描述转换为定量模型，这一过程往往复杂且耗时。
+### Innovation
+提出了一种基于模板的工作流，利用大语言模型进行初步的概念化过程。研究人员可以使用大语言模型从利益相关者的直观问题描述中识别出关键模型组件，探索他们对问题的多元化视角，将这些组件整合成一个统一的模型，并通过迭代沟通将其实现为Python代码。这种方法有助于简化参与式建模过程，促进深度不确定性下的社会环境规划。
+### Conclusion
+通过对湖泊问题和电力市场问题进行实验，发现大语言模型可以作为有效工具，服务于深度不确定性下的社会环境规划过程中的参与式建模阶段。
+## 2. `cs.AI` - 基于物理信息的离线强化学习消除海上导航中的灾难性燃料浪费 [PDF](https://arxiv.org/pdf/2603.17319), [HTML](https://arxiv.org/abs/2603.17319)
+### Authors
+Aniruddha Bora,Julie Chalfant,Chryssostomos Chryssostomidis
+### Background
+国际航运产生的温室气体排放约占全球总量的3%，然而航线规划仍主要依靠启发式方法。现有的方法未能充分考虑燃料效率和航行安全性的问题，尤其是在极端天气条件下，可能会导致严重的燃料浪费。该文就提出了一种新的基于物理信息、燃料高效和风险意识的航线规划方法（PIER），旨在从历史船舶跟踪数据和海洋再分析产品中学习，以优化燃料使用并提高航行安全性。
+### Innovation
+该项目提出了PIER框架，这是一种离线强化学习方法，能够在不依赖于在线模拟器的情况下，学习得到能有效减少燃料消耗和提高航行安全性的航行策略。相较于传统的基于球面距离的航线规划方法，PIER不仅整体减少了10%的碳排放，更重要的是显著降低了灾难性燃料浪费的概率，进而降低了每次航行燃料消耗的方差。
+### Conclusion
+PIER框架能够有效对比真实船舶航行数据，并展现出比传统方法更加一致的航行性能。即使在实际预测不确定性下，PIER也能够保持其性能稳定，而传统方法则会受到严重影响。此外，该框架的结构具有良好的泛化能力，能够应用于多种不同的场景中，如野火撤离、航空飞行路径优化和未知地形中的自主导航。
+## 3. `cs.AI` - 基于图的认知型AI代理人记忆架构：版本记忆架构的形式信念修正语义 [PDF](https://arxiv.org/pdf/2603.17244), [HTML](https://arxiv.org/abs/2603.17244)
+### Authors
+Young Bin Park
+### Background
+尽管先前系统中存在AI代理记忆的各个组成部分，但它们的架构综合及其形式化基础尚未得到充分探索。本文提出了Kumiho，这是一种基于形式化信念修正语义的认知图原生记忆架构。
+### Innovation
+该架构的三个创新成果是：前瞻性索引（在写入时将LLM生成的未来场景影响加入索引）、事件提取（在摘要中保存结构化的因果事件）、客户端侧LLM重排序。此外，该架构证明了与财产图记忆系统操作语义的AGM信念修正框架之间的对应关系，并满足Hansson的基本信念基体理论。
+### Conclusion
+Kumiho在LoCoMo基准测试中实现了56.5%的总体F1值，其中包括97.5%的对抗性拒绝准确性。在LoCoMo-Plus基准测试中，Kumiho实现了93.3%的裁决准确率，显著优于所有已发布的基准线（最好为Gemini 2.5 Pro，45.7%）。
+## 4. `cs.AI` - 通过合成任务扩展的人工智能科学家 [PDF](https://arxiv.org/pdf/2603.17216), [HTML](https://arxiv.org/abs/2603.17216)
+### Authors
+Ziyang Cai,Harkirat Behl
+### Background
+随着AI代理的出现，自动科学研究已经成为可能。许多近期的研究构建了可以执行机器学习研究的代理系统，但并没有提供一种原则性的方法来训练这些代理——现有的大语言模型（LLMs）往往生成看起来合理但实际上无效的想法。为了朝着能够通过实践学习的代理训练迈进，本文提供了一个新的合成环境生成管道，专门针对机器学习代理设计。该管道自动生成与SWE-代理框架兼容的机器学习挑战，涵盖了主题采样、数据集提案和代码生成。
+### Innovation
+本文引入了一个创新的合成环境生成管道，该管道能够自动生成与SWE-代理框架兼容的机器学习挑战，涵盖主题采样、数据集提案和代码生成。生成的任务是基于现实中的机器学习数据集，并通过Huggingface API验证。此外，还使用了一个自我调试循环来验证任务的质量。通过这种方法，基于“合成任务”训练的学生模型在MLGym基准测试上的表现得到了提高，尤其是在Qwen3-4B和Qwen3-8B模型中，AUP指标分别提高了9%和12%。
+### Conclusion
+通过生成的合成任务，本文展示了学生模型（Qwen3-4B和Qwen3-8B）在MLGym基准测试上的性能提升。这种基于合成任务的训练方法有助于提高代理模型通过实践学习的能力。
+## 5. `cs.AI` - 对比推理对齐：从隐藏表示中进行强化学习 [PDF](https://arxiv.org/pdf/2603.17305), [HTML](https://arxiv.org/abs/2603.17305)
+### Authors
+Haozheng Luo,Yimin Wang,Jiahao Yu,Binghui Wang,Yan Chen
+### Background
+当前安全性防御主要集中在模型输出层面，而忽视了模型内部的推理过程。这使得对于模型对抗攻击，特别是对于模型脱管攻击（jailbreak attacks）缺乏有效的抵御措施。为此，该研究提出了一种名为CRAFT的红队对齐框架，它利用模型的推理能力和隐藏表示来提高对模型脱管攻击的鲁棒性。
+### Innovation
+CRAFT框架通过将对比表示学习与强化学习相结合，来分离出安全和不安全的推理轨迹。这种方法利用隐空间几何结构来实现推理层面的安全对齐，并证明通过结合潜在文本一致性到GRPO中可以消除表面对齐的策略，从而改善最终响应的安全性。
+### Conclusion
+CRAFT在多个安全性测试基准中，使用Qwen3-4B-Thinking和R1-Distill-Llama-8B两个强推理模型进行测试，与现有的最先进的防御措施如IPO和SafeKey相比，CRAFT表现更好。在与基线模型相比时，CRAFT在推理安全性和最终响应安全性方面分别平均提高了79.0%和87.7%，证明了隐藏空间推理对齐的有效性。
+## 6. `cs.AI` - InfoDensity: 基于信息密集度的奖励机制促进高效推理 [PDF](https://arxiv.org/pdf/2603.17310), [HTML](https://arxiv.org/abs/2603.17310)
+### Authors
+Chengwei Wei,Jung-jae Kim,Longyin Zhang,Shengkai Chen,Nancy F. Chen
+### Background
+现有的强化学习方法虽然可以优化最终响应的长度，但往往会忽视中间推理步骤的质量，使模型容易受到奖励作弊的影响。LSTM等大语言模型通常生成冗长和重复的推理痕迹，这会导致不必要的计算成本。
+### Innovation
+提出InfoDensity，这是一种结合基于AUC的奖励和单调性奖励的奖励框架，作为推理质量统一衡量标准，并通过长度缩放权重更侧重于以更简洁的方式实现相同质量。实验表明，InfoDensity可以在保持高精度的同时显著减少标记使用量，实现准确性和效率之间的良好权衡。
+### Conclusion
+实验证明，InfoDensity框架不仅能够提高推理质量，还能在减少标记使用量的同时保持准确率，实现良好的准确率-效率权衡。
+## 7. `cs.AI` - LLMs在基于文本的游戏环境中的多步演绎推理能力有多强？ [PDF](https://arxiv.org/pdf/2603.17169), [HTML](https://arxiv.org/abs/2603.17169)
+### Authors
+Rebecca Ansell,Autumn Toney-Wails
+### Background
+论文背景在于利用经典的板游戏《东方不败》（Clue）的多代理版本来作为规则基础的测试环境，评估高级语言模型（LLM）的多步骤演绎推理能力。研究发现，即使使用GPT-4o-mini和Gemini-2.5-Flash等代理，多个模型在18场模拟游戏中只取得4次正确胜利，显示出在整个游戏过程中保持一致的演绎推理难度。
+### Innovation
+文章的创新点在于提出了一个规则基础的测试框架，让高级语言模型参与多步演绎推理的评估，通过分析多个模型的表现，探讨结构化逻辑谜题的微调能否提升游戏过程中的推理和游戏表现。
+### Conclusion
+结论是微调虽然没有稳定地提高模型的性能，反而在某些情况下增加了推理量而没有提高推理精度。整个研究揭示了现有模型在处理复杂、连续的多步骤推理任务上的困难。
+## 8. `cs.AI` - Draft-and-Prune: 提高自动形式化在逻辑推理中的可靠性 [PDF](https://arxiv.org/pdf/2603.17233), [HTML](https://arxiv.org/abs/2603.17233)
+### Authors
+Zhiyu Ni,Zheng Liang,Liangcheng Song,Chenrui Cao,Xian Zhang,Alberto Sangiovanni-Vincentelli,Pierluigi Nuzzo
+### Background
+自动形式化(Auto-formalization, AF)将自然语言推理问题转化为求解器可执行的程序，使符号求解器能够进行精确的逻辑推导。然而，现有的AF管道目前是脆弱的：程序可能无法执行，或者虽然执行但编码了错误的语义。尽管前人工作很大程度上通过基于求解器反馈的修复来缓解语法错误，但减少语义错误仍然是一个主要瓶颈。
+### Innovation
+我们提出了Draft-and-Prune (D&P)，这是一种以多样性和验证为基础的推理时框架，用于通过AF加强逻辑推理。D&P首先草拟了多个自然语言计划，并基于这些建议生成程序。它进一步去除虽然可执行但矛盾或模糊的正式化表示，并通过多数投票聚集活下来的路径的预测。在四个代表性基准数据集上，D&P在不需要额外监督的情况下显著增强了基于AF的推理。特别是在AR-LSAT基准上，当使用AF时，D&P分别以GPT-4和GPT-4o实现78.43%和78.00%的准确率，大幅超越最强的AF基线MAD-LOGIC和CLOVER。然后，D&P在其他基准上达到接近天花板的性能，包括PrOntoQA和LogicalDeduction上的100%。
+### Conclusion
+D&P在多个逻辑推理基准上显著增强了AF推理模型的性能，有效地解决了其脆弱性问题，展示了其在提升自动形式化系统可靠性方面的实际应用潜力。
+## 9. `cs.AI` - 基于时空侧车和几何切换的级联感知多代理路由 [PDF](https://arxiv.org/pdf/2603.17112), [HTML](https://arxiv.org/abs/2603.17112)
+### Authors
+Davide Di Gioia
+### Background
+在高级AI推理系统中，常见的架构模式是符号图网络：专门的代理或模块通过委派边连接，动态执行图中路由任务。目前的调度器优化了负载和适应性，但不考虑几何结构，无法建模级联失败与循环图在不同情况下的不同传播方式。在树型委派中，单个失败可能会指数级传播；而在密集循环图中，失败通常自我限制。
+### Innovation
+本研究识别了可观察性缺口，量化了系统级别成本，并提出了一种轻量级的缓解措施。提出了在线几何控制，用于时间指数执行图中的路径风险估计，结合（i）欧几里得时空传播基线，（ii）具有时间衰减的双曲路径风险模型（可选激增激励），以及（iii）结构特征上的几何选择器。选择器是一个紧凑的MLP（9->12->1），使用六个拓扑统计数据和三个几何感知信号：BFS壳增长斜率、圈级范数和拟合庞加莱曲率。在Genesis 3基准分布中，自适应切换将最困难的非树型区域的胜率从64-72%（固定双曲变体）提高到92%，并实现了87.2%的整体胜率。
+### Conclusion
+要衡量系统的总价值，与Genesis 3路由相比，仅使用原生的策略选择器（团队适应性和平均节点负载）作为基线，该基线的整体胜率为50.4%，在树型区域的胜率为20%，而完全侧车恢复了87.2%的整体胜率（+36.8pp），在树型区域的胜率上增加了48%到68%。整体而言，包含133个参数的侧车显著减轻了一个高性能执行图系统的几何盲级联失败传播。
+## 10. `cs.AI` - 变压器是贝叶斯网络 [PDF](https://arxiv.org/pdf/2603.17063), [HTML](https://arxiv.org/abs/2603.17063)
+### Authors
+Gregory Coppola
+### Background
+文章的背景在于尽管Transformer架构在人工智能中占主导地位，但是它们为何有效仍难以解释。
+### Innovation
+文章的创新在于通过五种方式证明了Transformer实际上就是贝叶斯网络。这包括证明所有的sigmoid Transformer都能实现加权循环信念传播，证明Transformer可以实现任何知识库的精确信念传播，证明sigmoid Transformer生成精确后验独有的权重，揭示Transformer层中AND/OR的逻辑结构，并通过实验验证这些形式的结果，以及证明有穷概念空间对于可验证推理是必要的。
+### Conclusion
+文章的结论是Transformer和贝叶斯网络有直接联系，并且通过这种方法解释了Transformer的工作原理，同时强调验证推理需要有穷的概念空间，没有概念的推理将导致幻觉问题，这是规模扩展无法解决的结构性问题。
+## 11. `cs.CV` - 具备运动意识的指示图像分割 [PDF](https://arxiv.org/pdf/2603.17413), [HTML](https://arxiv.org/abs/2603.17413)
+### Authors
+Chaeyun Kim,Seunghoon Yi,Yejin Kim,Yohan Jo,Joonseok Lee
+### Background
+指示图像分割（RIS）要求根据文本描述识别图像中的对象。现有方法在处理与运动相关的查询时显著不如处理基于外观的查询。
+### Innovation
+提出了一个高效的数据增强方案（从原始描述中提取运动中心的短语），以及一种多模态径向对比学习（MRaCL），在融合的图像-文本嵌入上进行，而非单模态表示。此外，引入了一个新的测试子集，专注于运动中心的查询，并创建了一个新的基准测试M-Bench，其中对象主要通过动作来区分。
+### Conclusion
+广泛的实验证明，该方法在多个RIS模型上显著提高了与运动相关的查询性能，同时在基于外观的描述上保持了竞争力。
+## 12. `cs.CV` - SHIFT: 使用 adversarial 嵌合调谐在视频扩散模型中进行运动对齐 [PDF](https://arxiv.org/pdf/2603.17426), [HTML](https://arxiv.org/abs/2603.17426)
+### Authors
+Xi Ye,Wenjia Yang,Yangyang Xu,Xiaoyang Liu,Duo Su,Mengfei Xia,Jun Zhu
+### Background
+图像条件的视频扩散模型能展现出色的视觉真实度，但在运动保真度方面往往有所欠缺，例如运动动力学降低或长时间的时空一致性遭到破坏，特别是在微调后。我们研究了视频扩散模型训练后的运动对齐问题。
+### Innovation
+我们提出了基于像素流量动力学的像素-运动奖励，捕捉瞬时和长期的运动一致性。进一步提出了Smooth Hybrid Fine-tuning (SHIFT)，这是一种基于奖励的具有可扩展性的视频扩散模型调谐框架，将常规的监督调谐和优势加权调谐整合到一个统一的框架中。得益于此创新的对抗优势，SHIFT提高了收敛速度并缓解了奖励作弊。
+### Conclusion
+实验表明，我们的方法有效地解决了现代视频扩散模型监督调谐中的动态范围崩溃问题。
+## 13. `cs.CV` - VirPro: 视觉参考的概率性提示学习用于弱监督单目3D检测 [PDF](https://arxiv.org/pdf/2603.17470), [HTML](https://arxiv.org/abs/2603.17470)
+### Authors
+Chupeng Liu,Jiyong Rao,Shangquan Sun,Runkai Zhao,Weidong Cai
+### Background
+单目3D物体检测通常依赖于伪标签技术以减少对真实世界标注的依赖。最近的研究表明，确定性的语言提示可以作为有效的辅助弱监督信号，提供补充语义信息。然而，手工编写的文本描述难以捕捉不同场景中个体的内在视觉多样性，限制了模型学习情景相关的表示。为此作者提出了一种Visual-referred Probabilistic Prompt Learning (VirPro)，一种适应性多模态预训练范式，可以无缝集成到各种弱监督单目3D检测框架中。
+### Innovation
+作者提出了一种名为Visual-referred Probabilistic Prompt Learning (VirPro)的新方法，其中包括生成一系列适应性场景条件的提示并在Adaptive Prompt Bank (APB)中存储；引入了Multi-Gaussian Prompt Modeling (MGPM)，将基于场景的视觉特征整合到相应的文本嵌入中，从而使文本提示能够表达视觉不确定性；通过从融合的视觉-语言嵌入中解码针对提示的目标高斯分布，并在区域兴趣（RoI）级别上进行对比匹配，来增强语义连贯性，从而改善模型结果。
+### Conclusion
+在KITTI基准测试上的大量实验结果显示，集成作者提出的预训练范式可以显著提高模型性能，相较于基线模型，平均精度提高达4.8%。
+## 14. `cs.CV` - ECHO: 向更具情感恰当性和上下文意识的交互头部生成迈进 [PDF](https://arxiv.org/pdf/2603.17427), [HTML](https://arxiv.org/abs/2603.17427)
+### Authors
+Xiangyu Kong,Xiaoyu Jin,Yihan Pan,Haoqin Sun,Hengde Zhu,Xiaoming Xu,Xiaoming Wei,Lu Liu,Siyang Song
+### Background
+在自然面对面互动中，参与者能够无缝地交替进行说话和倾听，并产生由长距离上下文精细指导的面部行为，这些行为自然地表现出上下文适宜性和情感理性。现有的交互头部生成（Interactive Head Generation，IHG）方法通常依赖于行为和音频信号的短时窗口内条件，以联合驱动虚拟角色音频对齐的唇型动作和非语言面部行为的生成。现有方法面临两个主要挑战：缺乏对长范围上下文的建模，导致生成的面部行为缺乏上下文适宜性；以及对行为和音频信号的结合方式会导致跨信号干扰，影响说话时唇部区域的同步。
+### Innovation
+本文提出了一种新颖的交互头部生成框架 ECHO，该框架包含两个关键组件：长距离上下文理解（Long-range Contextual Understanding，LCU）组件，促进生成的虚拟角色面部行为在上下文适宜性和情感理性方面的提升；以及块级的具有空间感知的解耦交叉注意力调制（Block-wise Spatial-aware Decoupled Cross-attention Modulation，SDCM）模块，该模块保留了音频驱动的唇型动作，同时根据用户的行为线索自主地整合非唇面部区域，互补我们设计的两阶段训练范式，以提高唇部同步性和视觉保真度。
+### Conclusion
+广泛的实验展示了所提出组件的有效性，表明 ECHO 在交互头部生成方面的卓越性能。
+## 15. `cs.CV` - 轻量级视频生成中的运动自适应时间注意力机制 [PDF](https://arxiv.org/pdf/2603.17398), [HTML](https://arxiv.org/abs/2603.17398)
+### Authors
+Rui Hong,Shuxue Quan
+### Background
+本文提出了基于冻结的Stable Diffusion模型的运动自适应时间注意力机制，用于高效的视频生成。以往的研究往往忽略了视频内容的时间动态性，通常以相同的方式处理所有视频内容。这项工作旨在通过动态调整时间注意力感受野来改进这一点，特别是在具有高运动量的序列中保持快速变化的细节，在低运动量的序列中强调场景一致性。
+### Innovation
+该方法通过估计的运动内容动态调整时间注意力的感受野。具体而言，高运动量的序列通过本地跨帧关注来保存快速变化的细节，而低运动量的序列通过全局关注来确保场景的一致性。此外，研究还提出了一种级联策略，即将轻量级的时间注意力模块嵌入所有的UNet变换器块中。通过引入与时间相关噪声初始化和运动感知门控，该系统在训练100K视频时只增加了25.8M可训练参数，占基本UNet参数的2.9%，并且在WebVid验证集上取得了可竞争的结果。研究还表明，标准的去噪目标本身提供了足够的隐式时间正则化，超越了增加显式时间一致性损失的方法。
+### Conclusion
+实验表明，在训练100K视频的情况下，标准的去噪目标本身提供了足够的隐式时间正则化。消融研究揭示了噪声相关性和运动幅度之间的明确权衡，提供了在不同生成行为的推理时间进行实践控制的实用方法。
+## 16. `cs.CV` - AdaZoom-GUI：基于自适应缩放和指令细化的GUI定位 [PDF](https://arxiv.org/pdf/2603.17441), [HTML](https://arxiv.org/abs/2603.17441)
+### Authors
+Siqi Pei,Liang Tang,Tiaonan Duan,Long Chen,Shuxian Li,Kaer Huang,Yanzhe Jing,Yiqiang Yan,Bo Zhang,Chenghao Jiang,Borui Zhang,Jiwen Lu
+### Background
+GUI接地是视觉语言模型（VLMs）的一项关键能力，能够通过自然语言指令定位图形用户界面中的目标元素，实现自动交互。然而，由于高分辨率图像、小的用户界面元素和模糊的用户指令，基于GUI屏幕截图的接地仍然具有挑战性。
+### Innovation
+提出了一种自适应缩放的GUI接地框架AdaZoom-GUI，引入了指令细化模块和条件缩放策略，提高了定位精度和指令理解能力。
+### Conclusion
+实验结果表明，AdaZoom-GUI在公有基准测试中取得最先进的性能，特别是在高分辨率GUI理解和实用GUI代理部署方面。
+## 17. `cs.CV` - Mutually Causal Semantic Distillation Network for Zero-Shot Learning [PDF](https://arxiv.org/pdf/2603.17412), [HTML](https://arxiv.org/abs/2603.17412)
+### Authors
+Shiming Chen,Shuhuang Chen,Guo-Sen Xie,Xinge You
+### Background
+零样本学习（ZSL）旨在通过辅助信息（如属性）在开放世界中识别未见过的类别。其关键任务是如何在已见过的类别上推理视觉和属性特征之间的潜在语义知识，从而从已见过的类别有效转移到未见过的类别，进行语义知识的转移。先前的工作简单地利用弱监督下的单向注意力来学习潜在的语义表示，这未能有效地发现视觉和属性特征之间的内在语义知识。
+### Innovation
+提出了一种新的互因果语义蒸馏网络（MSDN++），用于为ZSL提取内在和充分的语义表示。MSDN++ 包含一个属性到视觉因果注意子网，用于学习基于属性的视觉特征，以及一个视觉到属性因果注意子网，用于学习基于视觉的属性特征。因果注意力鼓励这两个子网学习因果视觉-属性关联，以表征可靠的因果视觉/属性特征。两个相互注意子网通过训练过程中的相互指导和学习。
+### Conclusion
+在 CUB、SUN、AWA2 和 FLO 等三个广泛使用的基准数据集上进行的大量实验表明，MSDN++ 在强 baseline 上取得了显著的改进，达到了新的最强性能。
+## 18. `cs.CV` - AR-CoPO: 使用对比性策略优化对齐自回归视频生成 [PDF](https://arxiv.org/pdf/2603.17461), [HTML](https://arxiv.org/abs/2603.17461)
+### Authors
+Dailan He,Guanlin Feng,Xingtong Ge,Yi Zhang,Bingqi Ma,Guanglu Song,Yu Liu,Hongsheng Li
+### Background
+流式自回归（AR）视频生成器结合少量步骤蒸馏可以实现低延迟、高质量的合成，但仍难以通过强化学习从人类反馈（RLHF）进行对齐。现有的基于SDE的GRPO方法在这个环境中面临挑战：少量步骤的ODE和一致性模型采样器偏离了标准的流匹配ODE，其短、低随机性的轨迹对初始化噪声高度敏感，导致中期SDE探索无效。
+### Innovation
+提出了一种名为AR-CoPO（自回归对比性策略优化）的框架，它将邻近GRPO对比视角适应于流式AR生成。AR-CoPO通过分叉机制在随机选择的块上构建邻域候选者，分配序列级奖励，并执行局部化GRPO更新。此外，还提出了一种半离策略训练策略，该策略通过重播库中参考回放的操作结合离策略探索和利用，提高跨领域生成质量。
+### Conclusion
+在Self-Forcing实验中，AR-CoPO在基线之上提高了跨领域泛化能力和领域内的人类偏好对齐，提供了真正的对齐而非奖励包装的证据。
+## 19. `cs.CV` - 联合退化感知的任意尺度超分辨率用于可变比特率极端图像压缩 [PDF](https://arxiv.org/pdf/2603.17408), [HTML](https://arxiv.org/abs/2603.17408)
+### Authors
+Xinning Chai,Zhengxue Cheng,Xin Li,Rong Xie,Li Song
+### Background
+近年来，基于扩散的方法在极低比特率下表现出显著的图像压缩性能。然而，大多数方法需要为每个目标比特率训练独立的扩散模型，造成了大量的计算开销和实际部署的障碍。同时，最近的研究表明联合超分辨率可以作为一种有效的增强低比特率重建的方法，但在向超低比特率范围过渡时，这些方法会因为严重的信息损失而面临挑战，而且对固定超分辨率尺度的依赖限制了其在不同比特率下的灵活适应。
+### Innovation
+我们提出了一种新颖的图像压缩框架ASSR-EIC，它利用任意尺度超分辨率（ASSR）支持可变比特率极端图像压缩（EIC）。我们引入了一个任意尺度下采样模块来提供可调节的比特率降低，并且提出了一个基于扩散的、联合退化感知的ASSR解码器，使得在单一模型中实现比特率自适应重建。通过利用压缩和缩放感知的扩散先验指导重建，在各种压缩和缩放设置下实现了高质量和高真实感的恢复。我们设计了一个全局压缩和缩放适配器提供整体的比特率自适应指导，以及一个局部压缩和缩放调制器动态平衡生成和细节恢复的倾向。
+### Conclusion
+大量的实验表明，ASSR-EIC在极端图像压缩中取得了最先进的性能，同时支持灵活的比特率控制和自适应的视比特率依赖的重建。
+## 20. `cs.CV` - FACE-net：用于检索增强的情感视频字幕中的事实校准和情感增强 [PDF](https://arxiv.org/pdf/2603.17455), [HTML](https://arxiv.org/abs/2603.17455)
+### Authors
+Weidong Chen,Cheng Ye,Zhendong Mao,Peipei Song,Xinyan Liu,Lei Zhang,Xiaojun Chang,Yongdong Zhang
+### Background
+情感视频字幕（EVC）是一个新兴任务，目标是在描述视频中的事实内容时捕捉其中固有的情感。现有方法识别全局情感线索，然后将其与视频内容结合生成描述。但现有方法在生成过程中对事实和情感线索的挖掘和协调不足，难以解决事实-情感偏差的问题。事实-情感偏差指的是不同样本在生成时对事实和情感的要求不同。
+### Innovation
+本文提出了一种检索增强框架FACE-net，通过统一架构协作挖掘事实-情感语义，并提供针对生成过程的自适应和准确指导，打破了在所有样本学习中妥协的事实-情感描述倾向。技术上，首先引入外部仓库检索与视频内容最相关的句子以增强语义信息。其次，通过不确定性估计模块进行事实校准，将检索信息分解为主题-谓语-宾语三元组，通过视频内容自我完善和交叉完善不同的组件，以有效挖掘事实语义；再者，渐进的视觉情感增强模块利用校准过的事实语义作为专家，与视频内容和情感词典互动生成视觉查询和候选情感，然后对它们进行聚合以适应性地增强每种事实语义的情感，此外，为缓解事实-情感偏差，设计了一种动态偏差调整路由模块来预测并调整样本的偏差程度。
+### Conclusion
+FACE-net框架通过对事实-情感语义的协作挖掘和针对性指导，在不同样本生成过程中动态调整偏差，提供了一种创新的事实-情感协调方案，有效增强了情感视频字幕的生成质量和准确性。
