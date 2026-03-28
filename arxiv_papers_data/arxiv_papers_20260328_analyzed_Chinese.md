@@ -1,0 +1,273 @@
+# 20260328
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - 当集体智能成为彩票时？大语言模型中认知漂移的多智能体标度定律 [PDF](https://arxiv.org/pdf/2603.24676), [HTML](https://arxiv.org/abs/2603.24676)
+### Authors
+Hidenori Tanaka
+### Background
+多智能体系统由大型语言模型（LLMs）驱动，越来越多地部署在影响决策的情境中，无论是直接的还是间接的。然而，目前尚未明确了解其结果是否反映了集体推理、系统性偏见或仅仅是偶然性。最近的研究通过命名游戏问题提升了这一疑问，即使没有个体智能体在先验上偏好任何标签，人群也能快速打破对称性并达成共识。
+### Innovation
+引入了一个简化的模型——“量子单纯形嘀咕”（QSG），揭示了这个共识机制的本质，将这种基于采样的机制称为中立进化的“记忆漂移”。推导了因群体规模、通信带宽、上下文适应率和智能体内部不确定性等因素导致的漂移引发的极化标度法则，并在QSG模拟和基于LLMs的命名游戏实验中验证了这些法则。
+### Conclusion
+这些结果为研究多智能体系统中社会表征形成的整体机制提供了一个框架。
+## 2. `cs.AI` - SentinelAI: 一个用于结构化和链接下一代9-1-1紧急事件数据的多智能体框架 [PDF](https://arxiv.org/pdf/2603.24856), [HTML](https://arxiv.org/abs/2603.24856)
+### Authors
+Kliment Ho,Ilya Zaslavsky
+### Background
+紧急响应系统会产生大量来自不同机构和系统的数据。实际上，在保持符合下一代9-1-1数据标准的前提下，将这些信息在源之间进行关联和实时更新依然是一个挑战。理想情况下，这些数据应被视为持续的运营更新，新的事实能够迅速整合，以提供对事件发展情况的及时统一视图。因此，迫切需要一种能够将紧急通信转换成标准化、机器可读的数据集的方法，从而支持数据的集成、综合事件创建和跨源推理。
+### Innovation
+文章提出了SentinelAI，这是一种数据集成和标准化框架，能够将紧急通信转化为符合NENA标准的Emergency Incident Data Object JSON格式的数据集。SentinelAI运用了一种可扩展的处理管道，其中包括各种专门信息代理，如EIDO Agent，它能够从原始通信中提取信息并生成NENA兼容的Emergency Incident Data Object JSON。
+### Conclusion
+SentinelAI为实现下一代9-1-1紧急事件数据的标准化、结构化及链接提供了新的解决方案。通过提供一种可扩展的多智能体系统，它能够实时整合新的事实，并支持跨源推理和综合事件创建。
+## 3. `cs.AI` - 信任作为监督：用户信任与人工智能开发者行为的进化动力学 [PDF](https://arxiv.org/pdf/2603.24742), [HTML](https://arxiv.org/abs/2603.24742)
+### Authors
+Adeela Bashir,Zhao Song,Ndidi Bianca Ogbo,Nataliya Balabanova,Martin Smit,Chin-wing Leung,Paolo Bova,Manuel Chica Serrano,Dhanushka Dissanayake,Manh Hong Duong,Elias Fernandez Domingos,Nikita Huber-Kralj,Marcus Krellner,Andrew Powell,Stefan Sarkadi,Fernando P. Santos,Zia Ush Shamszaman,Chaimaa Tarzi,Paolo Turrini,Grace Ibukunoluwa Ufeoshi,Victor A. Vargas-Perez,Alessandro Di Stefano,Simon T. Powers, TheAnh Han
+### Background
+随着AI系统的功能和采用率的提升，AI的安全性已成为越来越迫切的关切。现有的进化AI治理模型主要集中在安全发展和有效监管的激励措施上，通常将用户信任视为一次性采用选择，而非由反复交互决定和培养的过程。该论文采用进化游戏理论，探索用户信任策略与开发者选择安全（合规）或不安全（不合规）AI的共进化过程，分析不同水平的监督成本和制度框架下的表现。
+### Innovation
+本文创新性地将用户信任建模为重复、不对称交互中的减少监督行为，并使用无限种群复制子分析与随机有限种群动力学及强化学习（Q-learning）模拟，研究AI系统开发中的信任和行为共同演化机制，发现了三个稳健的长期制度：无采用的安全开发，广泛采用但不安全的系统，以及广泛采用的安全系统。其中，只有第三个状态是理想的，它出现的前提是不安全行为的惩罚超过了额外的安全成本，同时用户还能偶尔承担监督。
+### Conclusion
+研究结果支持了强调透明度、低成本监督及实质性惩罚的治理建议，表明既非单纯监管也非盲目信任能够防止AI系统向不安全或低采用率的结果演进。
+## 4. `cs.AI` - 监督罗尔夫·威格姆：探索一种元认知协作监管的代理人工智能环路以用于工程设计 [PDF](https://arxiv.org/pdf/2603.24768), [HTML](https://arxiv.org/abs/2603.24768)
+### Authors
+Zeda Xu,Nikolas Martelaro,Christopher McComb
+### Background
+工程设计研究领域已研究利用大型语言模型（LLM）代理自动化工程设计过程的代理型AI系统。然而，这些系统与人类一样，容易受到一些病理问题的影响。机器设计代理也可能陷入现有的设计理念，从而在解决设计挑战时未能探索替代方案，可能会导致次优解决方案。
+### Innovation
+本文提出了两种新型的代理设计环路：一种是自我调节环路（SRL），其中设计代理自我调节并显式地监控其元认知；另一种是协作监管元认知代理环路（CRDAL），其中元认知协作监管代理协助设计代理进行元认知，从而缓解设计固着，提高工程设计任务的系统性能。在所测试的电池箱设计问题中，新提出的CRDAL系统能够在不显著增加计算成本的情况下产生性能更优的设计，并有效地在潜在的设计空间中导航，尽管SRL并没有在性能上显著优于空白循环(WRWL)，但它探索了设计空间的不同区域。
+### Conclusion
+本文提出的新系统架构和发现为未来发展代理型AI系统提供实际意义，以用于工程设计。
+## 5. `cs.AI` - 在敏感背景中的AI人文化前端道德设计抵制 [PDF](https://arxiv.org/pdf/2603.24853), [HTML](https://arxiv.org/abs/2603.24853)
+### Authors
+Silvia Rossi,Diletta Huyskes,Mackenzie Jorgensen
+### Background
+当前关于人工智能的伦理讨论主要集中在后端问题上，例如数据治理、模型训练和算法决策。相比之下，前端设计选择，尤其是涉及用户通过对话系统互动以及系统如何呈现自己等方面的问题，较少受到关注。这一差距对基于自然语言处理（NLP）的对话用户界面（CUI）尤其明显。这些界面中的人文化设计元素，如对话式交互、情感语言、个性模式和拟人类化元喻，越来越普遍，但这些设计的选择实际上是一种价值驱动的选择，会对用户的认知模型、信任度以及行为反应产生深远影响。论文通过案例研究讨论了这个问题。
+### Innovation
+论文研究了如何在敏感情境下的AI系统设计中避免过度的人文化设计，强调伦理前端设计的重要性。通过探讨人机交互（HCI）、对话AI和价值观敏感设计中的研究成果，论文分析了界面如何通过重塑用户期望、培养不适当的信任和微妙削弱用户自主权等方式，潜在地造成伦理问题。特别是在Chayn这一非营利组织开发的产品中，其谨慎地运用创伤知情设计原则来开发AI系统，挑战了目前AI产品的参与式标准。
+### Conclusion
+论文提出，AI前端设计中的伦理考量是一种程序化的道德实践，通过交互选择而非仅在系统逻辑中体现。这种前端的设计不仅需要考虑技术实现，更要受到伦理规范的指导，特别是在那些可能会对用户产生深远影响的敏感环境中，这样的设计特别重要。
+## 6. `cs.AI` - ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence [PDF](https://arxiv.org/pdf/2603.24621), [HTML](https://arxiv.org/abs/2603.24621)
+### Authors
+ARC Prize Foundation
+### Background
+ARC-AGI-3 是一个交互式基准测试，用于通过新颖的抽象、回合制环境研究代理智能。在这些环境中，代理需要探索、推断目标、建立环境动态的内部模型，并计划有效的行动序列，而无需明确的指示。ARC-AGI-3 侧重于评估新型任务上的流体适应效率，而不依赖语言和外部知识。此外，ARC-AGI-3 环境仅使用核心知识先验，并通过大量的人类测试者测试进行难度校准。
+### Innovation
+ARC-AGI-3 引入了一种新的挑战，用于评估前沿代理智能。这个基准测试设计用于研究能在没有明确指示的情况下在新颖抽象环境中有效行动的代理能力，同时专注于评价其流体适应效率。该基准测试的独特之处在于它不依赖于语言和外部知识，而且其环境难度是通过大量人类测试校准的。
+### Conclusion
+实验结果表明，人类可以在100%的情况下解决ARC-AGI-3的环境，而前沿的人工智能系统目前只能解决其中不到1%的任务。本论文介绍了基准测试的设计、效率评分框架（基于人类行动基准），以及构造、验证和校准环境的方法。
+## 7. `cs.AI` - ReLope: KL-Regularized LoRA Probes for Multimodal LLM Routing [PDF](https://arxiv.org/pdf/2603.24787), [HTML](https://arxiv.org/abs/2603.24787)
+### Authors
+Yaopei Zeng,Congchao Wang,Blake JianHang Chen,Lu Lin
+### Background
+当前，路由策略已成为在结合轻量级模型和强大但昂贵的大模型的大型语言模型（LLM）系统中平衡性能和成本的一种有前景的方法。近年来的研究表明，在仅文本的LLM中，探针路由能够通过预测小模型隐藏状态的正确性提供有效的解决方案。然而，当应用到多模态LLMs（MLLMs）时，这些探针表现大幅下降。原因在于视觉输入的存在削弱了隐藏状态正确性信号的可分性，使得标准设计的探针难以提取。
+### Innovation
+本文引入了两种互补的方法来改进MLLM中的探针路由。首先，提出了注意力探针（Attention Probe），该探针基于注意力分数聚合前一层的隐藏状态，以恢复分布式的正确性信号。其次，提出了KL正则化的LoRA探针（ReLope），该探针在轻量级LoRA适配器中插入，并应用KL正则化以学习路由感知的表示。实验结果表明，本文提出的方法在所有基准方法上均表现出优越性，表明提高隐藏状态的质量是MLLM有效路由的关键。
+### Conclusion
+综合实验结果显示，我们的方法在多模态LLM路由的有效性上始终优于基准方法，强调了改善隐藏状态质量的重要性。我们的代码可从该链接获取：this https URL
+## 8. `cs.AI` - AutoSAM：一种结合多模态检索增强生成的自动化SAM代码输入文件生成的智能框架 [PDF](https://arxiv.org/pdf/2603.24736), [HTML](https://arxiv.org/abs/2603.24736)
+### Authors
+Zaid Abulawi(1 and 2),Zavier Ndum Ndum(1 and 2),Eric Cervi(2),Rui Hu(2),Yang Liu(1) ((1) Department of Nuclear Engineering, Texas A&amp;M University, (2) Nuclear Science and Engineering Division, Argonne National Laboratory)
+### Background
+在先进反应堆系统的设计和安全性分析中，为系统级热动力学代码（如SAM）生成输入文件是一项耗时的任务。分析师需要从多种工程文件中提取和整合设计数据，并手动将其转换为求解器特定的语法。
+### Innovation
+本文提出了AutoSAM，一种智能框架，用于自动化生成SAM输入文件。该框架结合了大型语言模型代理，通过求解器用户手册和理论手册进行检索增强生成，同时使用专门工具分析PDF、图像、电子表格和文本文件。AutoSAM可以从杂乱的工程文档中提取与仿真相关的参数，并合成验证过的、求解器兼容的输入文件。
+### Conclusion
+AutoSAM 在四个不同复杂度的案例研究中表现良好，生成了与预期热动力学行为一致的可运行SAM模型，同时明确标识了缺少的数据并标注了假设值。该框架实现了结构化输入的100%使用率、PDF文本提取约88%及基于视觉几何提取100%的完整性。这些结果展示了从提示驱动的反应堆建模路径的实际可行性，其中分析师提供系统描述和支持文档，而代理将它们转换成透明且可执行的SAM模拟。
+## 9. `cs.AI` - 视觉-语言模型距离构建现实世界还有多远？一种物理生成推理基准 [PDF](https://arxiv.org/pdf/2603.24866), [HTML](https://arxiv.org/abs/2603.24866)
+### Authors
+Luyu Yang,Yutong Dai,An Yan,Viraj Prabhu,Ran Xu,Zeyuan Chen
+### Background
+视觉-语言模型（VLMs）的评估仍然主要集中在感知的事物逼真性上，强调生成视觉上合理的3D布局、形状和外观。现有基准通常不测试模型是否理解构建这些物体所需的逐步骤的过程和物理依赖关系，这对于自动化设计到施工管道至关重要。由于物理世界的运作不仅仅是视觉上的，还受到严格的结构和过程约束的支配，这一领域内仍存在大量未探索的能力。
+### Innovation
+本文提出了DreamHouse，一种新的物理生成推理基准：能够在几何、结构、可建造性和法规合规性约束下综合合成器。该基准基于已有完整工程标准且具有客观验证标准的住宅木框架建筑领域。DreamHouse支持迭代性互动，模型可以在中间构建状态进行观察，生成施工动作，并接收结构反馈，从而细粒度地评估规划、结构推理和自我纠正能力。此基准能够精确揭示现有的VLMs所存在的能力差距。
+### Conclusion
+实验表明，现有的VLMs在物理有效性方面存在巨大差距，这些差距在现有排行榜上难以明显看出。结果表明，物理有效性是视觉逼真性之外的一个关键评估维度，突出强调物理生成推理是多模态智能的一个独特且未充分发展的前沿领域。
+## 10. `cs.AI` - 形式化的代理工具协议语义：一种过程演算的方法 [PDF](https://arxiv.org/pdf/2603.24747), [HTML](https://arxiv.org/abs/2603.24747)
+### Authors
+Andreas Schlapbach
+### Background
+随着能够调用外部工具的大规模语言模型代理的出现，为代理协议正式验证产生了迫切需求。目前有两种方法占据主导地位：Schema-Guided Dialogue (SGD)，一种用于零样本API泛化的研究框架，以及Model Context Protocol (MCP)，一种用于代理与工具集成的行业标准。尽管两者都通过架构描述支持动态服务发现，但它们之间的正式关系尚未被探索。
+### Innovation
+基于先前工作，首次采用过程演算对SGD和MCP进行形式化，证明它们在良好定义的映射Φ下结构上等价。通过双向分析，确定了五个必要且充分的原则，以确保充分行为等价：语义完备性、明确的操作边界、失败模式文档、逐步披露兼容性和介入工具关系声明。此外，通过形式化这些原则作为MCP+类型系统的扩展，证明MCP+等同于SGD，为验证代理系统提供了第一个正式基础，并将架构质量证明为一种可证实的安全属性。
+### Conclusion
+我们提供了验证代理系统的第一正式基础，并确定了架构质量是可证实的安全属性。提出了五个关键原则来确保行为的完全等价，并通过MCP+扩展类型系统进行了形式化验证，证明了MCP+与SGD等同。
+## 11. `cs.AI` - 当一致性成为偏差：半结构化临床访谈中的访谈者效应 [PDF](https://arxiv.org/pdf/2603.24651), [HTML](https://arxiv.org/abs/2603.24651)
+### Authors
+Hasindri Watawana,Sergio Burdisso,Diego A. Moreno-Galván,Fernando Sánchez-Vega,A. Pastor López-Monroy,Petr Motlicek,Esaú Villatoro-Tello
+### Background
+自动从医生-患者对话中检测抑郁情绪因其可获得的公共语料库和语言模型的进步而逐渐受到关注。然而，模型的可解释性仍然不足：尽管报告了强大的表现，但通常未解释驱动预测的因素。
+### Innovation
+研究分析了三个数据集（ANDROIDS、DAIC-WOZ、E-DAIC），发现了半结构化访谈中访谈者提示的系统性偏差。通过将模型训练限制在参与者的话语上，可以更广泛地分布决策依据，并反映真实的语言线索。研究结果揭示了一种跨数据集、架构无关的偏差，并强调了通过时间和说话者定位决策依据的分析需求，以确保模型从参与者的话语中学习。
+### Conclusion
+半结构化访谈协议确保了一致性，但包括访谈者提示会通过利用脚本特征夸大性能。研究结果突显了需要定位决策证据来确保模型从参与者语言中学习的需求。
+## 12. `cs.AI` - 使用单神经元和自突触重构神经网络 [PDF](https://arxiv.org/pdf/2603.24692), [HTML](https://arxiv.org/abs/2603.24692)
+### Authors
+Wuque Cai,Hongze Sun,Quan Tang,Shifeng Mao,Zhenxing Wang,Jiayi He,Duo Chen,Dezhong Yao,Daqing Guo
+### Background
+脉冲神经网络（SNNs）在类脑计算中展现出潜力，但高效率的模型仍然依赖于密集的多层架构，这导致了显著的通信成本和状态存储成本。现有的SNNs需要大量的计算资源和内存存储，这限制了它们的实际应用。
+### Innovation
+该研究受到自突触的启发，提出了时间延迟自突触SNN（TDA-SNN）框架，通过单个漏电整流神经元和原型学习训练策略来重构SNNs。TDA-SNN能够在统一框架中实现记忆、多层感知机和类似卷积的脉冲架构，实验表明在记忆和多层感知机（MLP）设置中具有竞争力，而在卷积设置中表现出空间和时间的权衡。
+### Conclusion
+与标准SNNs相比，TDA-SNN在神经元数量和状态内存方面显著减少，提高了每个神经元的信息容量，但增加了极端单神经元设置中的额外时间延迟。这些发现强调了时间多路复用单神经元模型作为紧凑的计算单元在类脑计算中的潜力。
+## 13. `cs.AI` - 可扩展的对象关系编码以增强大型语言模型中的三维空间推理 [PDF](https://arxiv.org/pdf/2603.24721), [HTML](https://arxiv.org/abs/2603.24721)
+### Authors
+Shengli Zhou,Minghang Zheng,Feng Zheng,Yang Liu
+### Background
+空间推理旨在基于3D场景中的空间关系定位目标对象，这对于开发智能的实体代理至关重要。然而，由于3D场景-语言成对数据的有限可用性，从头开始训练具有强大推理能力的模型是具有挑战性的。以往的方法尝试将3D场景表示注入大型语言模型（LLMs）的输入空间，并利用预训练的理解和推理能力进行空间推理。但是，编码绝对位置的模型难以从过早融合的特征中提取空间关系，而将所有空间关系（数量呈平方级增长）明确编码为输入令牌的方法则面临可扩展性差的问题。
+### Innovation
+提出了QuatRoPE，一种新颖的位置嵌入方法，其输入长度与对象数量成线性关系，并通过注意力层中的点积显式地计算对象对之间的空间关系。QuatRoPE的整体三维坐标矢量编码保证了高度的空间一致性，同时维护了场景的几何完整性。此外，引入了隔离门限RoPE扩展（IGRE），有效地将QuatRoPE的影响限制在对象相关的令牌上，从而最小化对LLM现有位置嵌入的干扰，保持LLM的原始能力。
+### Conclusion
+广泛的经验表明，这些方法的有效性。相关的代码和数据可在以下URL获取：this https URL。
+## 14. `cs.AI` - 基于双图多代理强化学习的手递交优化 [PDF](https://arxiv.org/pdf/2603.24634), [HTML](https://arxiv.org/abs/2603.24634)
+### Authors
+Matteo Salvatori,Filippo Vannella,Sebastian Macaluso,Stylianos E. Trevlakis,Carlos Segura Perales,José Suarez-Varela,Alexandros-Apostolos A. Boulogeorgos,Ioannis Arapakis
+### Background
+细胞网络中的HO控制由一组HO控制参数管理，这些参数传统上通过基于规则的启发式方法进行配置。一个重要的参数是相邻小区之间的Cell Individual Offset (CIO)，它用于偏移HO触发决策。在网络规模下，调整CIO成为一个紧密耦合的问题，小的变化可以重新导向跨多个邻居的移动性流，并且静态规则经常在非稳定流量和移动性情况下退化。
+### Innovation
+通过将HO优化形式化为网络的双图上的Decentralized Partially Observable Markov Decision Process (Dec-POMDP)，我们提出了基于双图的多代理强化学习方法TD3-D-MA。该方法使用共享参数的图形神经网络（GNN）代理在双图上操作，并利用区域化双评论家进行训练，以提高密集部署中的信用分配。
+### Conclusion
+我们在ns-3系统级仿真器上，使用实际网络运营商参数和异构流量模式及网络拓扑进行了TD3-D-MA的评估。结果表明，TD3-D-MA相比标准HO启发式和集中式RL基线提升了网络吞吐量，并在拓扑和流量变化时表现出了鲁棒的泛化能力。
+## 15. `cs.AI` - DyMRL: 动态多空间表示学习在知识图中的多模态事件预测 [PDF](https://arxiv.org/pdf/2603.24636), [HTML](https://arxiv.org/abs/2603.24636)
+### Authors
+Feng Zhao,Kangzheng Liu,Teng Peng,Yu Yang,Guandong Xu
+### Background
+在现实世界场景中的事件预测中，准确的多模态知识表示至关重要。然而，现有研究主要集中在静态设置上，忽视了多模态知识的动态获取和融合。在知识获取层面，现有动态学习方法往往仅局限于跨异构空间或单一空间的浅层结构，难以捕捉到深度的几何关联特征。在知识融合层面，现有多模态融合特征的现有方法基于静态注意机制，难以捕捉到不同模态在不同时刻对未来事件的动态贡献变化。
+### Innovation
+本文提出了一种动态多空间表示学习方法（DyMRL），用于高效地获取和融合多模态时间知识。针对上述问题，DyMRL方法将这些具有时间特定结构特征整合进关系消息传递框架中，来学习深层表示，从而体现人类在联想思维、高级抽象和逻辑推理方面的智能。此外，DyMRL还整合了先进的双重融合-进化注意力机制，按照对称方式在不同时间戳上对不同模态进行动态学习重点分配。
+### Conclusion
+为验证DyMRL的事件预测性能，我们通过其学习到的历史多模态时间知识构建了四个基准。广泛的实验表明，DyMRL优于最新的动态单模态和静态多模态基线方法。
+## 16. `cs.AI` - 格罗克现象作为一种可验证的有限尺寸转变 [PDF](https://arxiv.org/pdf/2603.24746), [HTML](https://arxiv.org/abs/2603.24746)
+### Authors
+Yuda Bi,Chenyu Zhang,Qiheng Wang,Vince D Calhoun
+### Background
+格罗克现象（Grokking）通常使用相变语言描述，但在有限输入条件下缺乏可验证性。这篇文章通过将 $textbf{Z}_p$ 的组阶 $p$ 视为可接受的宏量变量，并将隐藏输出的频谱头尾对比视为表示层级的序参数，引入了有限输入条件下的验证方法。
+### Innovation
+通过引入组阶 $p$ 作为宏观变量，并使用隐藏输出的频谱头尾对比作为表示层级的序参数，应用凝聚态物理风格的诊断链和粗网格扫描以及密集的近乎临界加法审计来验证格罗克现象是否构成相变，发现了有限尺寸边界，并强烈否定了平滑交叉解释，将相变语言转化为可量化的有限尺寸声明而非仅仅类比。
+### Conclusion
+格罗克现象可以用定量的有限尺寸声明来测试，而不是仅通过类比来引用相变语言，尽管转变阶数仍待解决。
+## 17. `cs.AI` - 几何模型足够吗？基于地标的眼球追踪评估 [PDF](https://arxiv.org/pdf/2603.24724), [HTML](https://arxiv.org/abs/2603.24724)
+### Authors
+Daniele Agostinelli,Thomas Agostinelli,Andrea Generosi,Maura Mengoni
+### Background
+基于外观的眼球追踪系统通常依赖于深度卷积神经网络（CNNs），这类模型虽然准确但计算成本高且难以解释。基于面部特征点的几何方法因其轻量化而具有吸引力，但其性能和泛化能力在现代基准中仍需进一步研究。本研究旨在全面评估基于特征点的眼球追踪方法。
+### Innovation
+作者提出了一种标准化的流程来提取和标准化三个大规模数据集（Gaze360、ETH-XGaze 和 GazeGene）中的特征点，并使用轻量级回归模型（极端梯度提升树）和两种神经网络架构（整体多层感知机、双胞胎多层感知机）进行训练，以捕捉双目几何结构。研究表明，尽管在同类评估中表现较低，但提出的多层感知机架构在跨域评估中展示了与ResNet18基准相当的泛化能力。
+### Conclusion
+研究结果表明，稀疏几何特征编码了足够信息以实现稳健的眼球追踪，为高效、可解释且保护隐私的应用铺平了道路。
+## 18. `cs.AI` - Experiential Reflective Learning for Self-Improving LLM Agents [PDF](https://arxiv.org/pdf/2603.24639), [HTML](https://arxiv.org/abs/2603.24639)
+### Authors
+Marc-Antoine Allard,Arnaud Teinturier,Victor Xing,Gautier Viaud
+### Background
+大型语言模型（LLMs）近期的进展使得自主代理能够进行复杂的推理和多步骤问题解决。然而，这些代理在适应专门环境和利用过往互动方面存在困难，他们每次面临新任务时都需要从头开始，无视其积累的经验。
+### Innovation
+我们提出了经验反思学习（ERL），这是一种简单的自我改进框架，通过经验学习实现快速环境适应。ERL 反思任务轨迹和结果，生成启发式方法，捕捉可行动的教训并跨任务转移。在测试时，基于当前任务检索相关启发式方法并注入代理的上下文中以指导执行。在 Gaia2 标准中，ERL 比 ReAct 基准提高了 7.8% 的成功率，任务完成的可靠性显著提高，并且优于先前的经验学习方法。通过系统性的排除分析，我们发现选择性检索是必不可少的，启发式方法比少量示例轨迹提示提供了更可转移的抽象。
+### Conclusion
+这些结果表明，通过提取可转移的启发式方法来反映单次尝试的经验可以实现有效的代理自我改进。
+## 19. `cs.AI` - 分布式系统中的去中心化任务调度：一种深度强化学习方法 [PDF](https://arxiv.org/pdf/2603.24738), [HTML](https://arxiv.org/abs/2603.24738)
+### Authors
+Daniel Benniah John
+### Background
+大规模分布式系统的任务调度面临着动态工作负载、异构资源和竞争性的服务质量要求所带来的显著挑战。传统的集中式方法面临可扩展性限制和单点故障的问题，而传统的启发式方法对变化条件缺乏适应性。
+### Innovation
+本文提出了一个面向异构分布式系统的去中心化多代理深度强化学习(DRL-MADRL)框架，将问题形式化为去中心化部分可观测马尔可夫决策过程（Dec-POMDP），开发了一种仅使用NumPy实现的轻量级actor-critic架构，并在资源受限的边缘设备上实现了不依赖于大型机器学习框架的部署。实验结果表明该方法在平均任务完成时间、能源效率和SLA满意度上分别提高了15.6%、15.2%和82.3%，并且所有改进都具有统计显著性。
+### Conclusion
+本文提出的去中心化多代理深度强化学习框架在异构分布式系统中实现了良好的任务调度性能，特别是在平均任务完成时间和能源效率方面取得了显著改善，并满足了更高的服务级别协议要求。整个实现仅依赖于NumPy、Matplotlib和SciPy，同时提供了完整源代码和实验数据以实现完全的可再现性。
+## 20. `cs.AI` - 基于伪标签NCF的稀疏在线健康社区推荐：双重表示学习与可解释性准确性权衡 [PDF](https://arxiv.org/pdf/2603.24750), [HTML](https://arxiv.org/abs/2603.24750)
+### Authors
+Pronob Kumar Barman,Tera L. Reynolds. James Foulds
+### Background
+在线健康社区连接了患者以提供同伴支持，但用户在缺乏先前互动以进行个性化推荐时面临发现挑战。研究在极低互动稀疏性场景下的推荐问题，用户通过调查问卷提供16维的介绍向量，支持群体具有结构化特征集。研究扩展了基于神经网络的协同过滤架构，如矩阵分解、多层感知机和神经MF，并通过从特征对齐的余弦相似度映射到[0, 1]区间得到辅助伪标签目标。该研究通过冷启动条件下协议进行评估，包括165名用户和498个支持群体的数据集。
+### Innovation
+研究提出了基于伪标签的神经协同过滤（Pseudo Label NCF）模型，通过引入伪标签目标来解决极低互动稀疏性场景下的推荐问题。该模型学习安全嵌入空间：主嵌入空间用于排名，伪标签嵌入空间用于语义对齐。实验结果显示，在线健康社区推荐性能得到了提升，所有伪标签变体的排名性能都有所增加，同时伪标签嵌入空间的余弦聚类得分也高于基线嵌入。
+### Conclusion
+伪标签NCF模型在极端稀疏场景下单标签NCF推荐性能得到了显著提升，同时生成了可以用作特定任务的可解释嵌入空间。但是，嵌入的可分性与排名准确性之间存在负相关，表明在可解释性和性能之间存在着权衡。
+## 21. `cs.CV` - HGGT: Robust and Flexible 3D Hand Mesh Reconstruction from Uncalibrated Images [PDF](https://arxiv.org/pdf/2603.23997), [HTML](https://arxiv.org/abs/2603.23997)
+### Authors
+Yumeng Liu,Xiao-Xiao Long,Marc Habermann,Xuanze Yang,Cheng Lin,Yuan Liu,Yuexin Ma,Wenping Wang,Ligang Liu
+### Background
+计算机视觉领域从图像中恢复高保真3D手部几何是一项关键任务，对机器人技术、动画和VR/AR等领域具有重要意义。现有方法存在两个关键的挑战：单视图方法部署简单但深度不明确且容易出现遮挡，而多视图系统虽然可以解决这些问题但通常需要固定且经过校准的设置，这限制了它们在实际环境中的应用。
+### Innovation
+本研究通过借鉴学习视觉数据中显式几何的3D基础模型，将从不同视角的手重建任务重新定义为基于视觉几何的任务。提出了一种前馈架构，该架构在文献中首次能够从未校准的视角联合推断3D手部网格和相机姿态，大幅提升了在野外未校准场景中的恢复精度和灵活性。
+### Conclusion
+广泛的评估表明，我们的方法在基准上表现出色，并在野外未校准场景中具有强大的泛化能力。
+## 22. `cs.CV` - TopoMesh：通过拓扑统一的高保真网格自编码 [PDF](https://arxiv.org/pdf/2603.24278), [HTML](https://arxiv.org/abs/2603.24278)
+### Authors
+Guan Luo,Xiu Li,Rui Chen,Xuanyu Yi,Jing Lin,Chia-Hao Chen,Jiahang Liu,Song-Hai Zhang,Jianfeng Zhang
+### Background
+现有的高保真3D生成主要依赖于VAE-Diffusion管道，VAE的重构能力为生成质量设定了上限。现有的VAE存在的根本挑战是真实网格和网络预测之间的表示不匹配：真实网格具有任意且可变的拓扑结构，而VAE通常预测固定结构的隐式字段（例如，规则网格上的距离场）。这种固有的不匹配阻碍了建立明确的网格层级对应关系，导致先前工作不得不依赖间接监督信号如距离场或渲染损失。因此，在重建过程中，精细的几何细节，特别是尖锐特征，被糟糕地保留。
+### Innovation
+TopoMesh引入了一种基于稀疏体素的VAE，它通过共享的Dual Marching Cubes (DMC)拓扑框架统一了真实网格和预测网格。具体来说，通过一种保留尖锐边缘的体素重新网格化算法，将任意输入网格转换为DMC兼容的表示形式。解码器输出的网格以相同的DMC格式进行表示，确保预测网格和目标网格具有相同的拓扑结构。这在顶点和面的层级上建立了明确的对应关系，允许我们推导出清晰梯度的拓扑、顶点位置和面朝向的明确网格层级监督信号。稀疏VAE架构结合了这一统一框架，并通过教师强迫训练和逐步分辨率训练实现稳定和高效的收敛。
+### Conclusion
+广泛的实验证明，TopoMesh在重建保真度上显著优于现有的VAE，实现了尖锐特征和几何细节的更优保留。
+## 23. `cs.CV` - RS-SSM: Refining Forgotten Specifics in State Space Model for Video Semantic Segmentation [PDF](https://arxiv.org/pdf/2603.24295), [HTML](https://arxiv.org/abs/2603.24295)
+### Authors
+Kai Zhu,Zhenyu Cui,Zehua Zang,Jiahuan Zhou
+### Background
+近期，基于状态空间模型在视频分割领域的线性复杂度状态空间压缩显示出高效性。然而，视频语义分割（VSS）需要具备像素级的时空建模能力来保持语义对象分割时的时序一致性。虽然状态空间模型能够在状态空间压缩中保留共同的语义信息，但由于固定大小的状态空间会不可避免地遗忘特定信息，这限制了模型在像素级分割上的能力。
+### Innovation
+本文提出了一种针对视频语义分割的精化特定状态空间模型（RS-SSM），通过时空特异性信息的补充精化来应对上述问题。具体来说，设计了一种通道级振幅感知器（CwAP）来提取和对齐状态空间中特定信息的分布特征，同时提出了一种遗忘门信息精化器（FGIR）根据特定信息分布自适应地反转和精化状态空间模型中的遗忘门矩阵，利用反转的遗忘门来补充精化状态空间压缩中遗忘的特定信息，从而增强模型的时空像素级分割能力。
+### Conclusion
+在四种VSS基准上的广泛实验表明，我们的RS-SSM在保持高效计算的同时实现了最先进的性能。相关代码可在该链接获得。
+## 24. `cs.CV` - 图记忆：一种多模态嵌入推理的结构化和可解释框架 [PDF](https://arxiv.org/pdf/2511.14961), [HTML](https://arxiv.org/abs/2511.14961)
+### Authors
+Artur A. Oliveira,Mateus Espadoto,Roberto M. Cesar Jr.,Roberto Hirata Jr
+### Background
+现有的非参数框架通常依赖于参数化的模型来表示嵌入空间，这限制了它们的灵活性和适应性，尤其是在处理多模态数据时。论文引入的一种新的结构化非参数框架——图记忆（GM），通过可靠性标注的原型区域图来表示嵌入空间，统一处理实例检索、基于原型的推理和图扩散。
+### Innovation
+GM框架通过原型关系编码局部几何结构和区域不确定性，并通过在整个结构上扩散查询证据来进行推理，从而在单一的归纳和可解释模型中统一实例检索、基于原型的推理和图扩散。该框架具有固有的模态无关性：在多模态设置中，为每种模态构建独立的原型图，并通过可靠性感知的晚期融合结合它们的校准预测，从而透明地整合如全切片图像和基因表达谱等异构数据源。
+### Conclusion
+实验结果表明，GM在合成基准测试、乳腺组织病理学（IDC）和多模态AURORA数据集上均能与kNN和Label Spreading匹配或超越其精度，并提供更好的校准、更平滑的决策边界和百倍数量级的小内存使用量。通过明确建模区域可靠性和关系结构，GM为单模态和多模态领域的非参数推理提供了原则性和可解释的方法。
+## 25. `cs.CV` - 从游戏分析揭示人类注意力模式以支持强化学习 [PDF](https://arxiv.org/pdf/2504.11118), [HTML](https://arxiv.org/abs/2504.11118)
+### Authors
+Henrik Krauss,Takehisa Yairi
+### Background
+本文介绍了一种新的方法，仅通过游戏数据来揭示人类内部注意力模式（与决策相关的注意力），利用来自强化学习（RL）的离线注意力技术。提出的上下文相关、任务相关（CTR）注意力网络可以从Atari环境中的人类和RL代理游戏生成注意力图。
+### Innovation
+本文提出了CTR注意力网络，并通过与代理地图以及基于人类眼动追踪数据的临时集成明显注意力（TIOA）模型进行定量和定性比较，验证了人类CTR地图揭示内部注意力模式的能力。结果表明，人CTR图比代理图更稀疏，并且与TIOA地图更一致。此外，这些地图在指导RL代理时表现出略好且更稳定的性能，并且显著优于基于TIOA的代理。
+### Conclusion
+本文推进了人类与代理注意力差异的理解，并提供了一种从行为数据中提取和验证内部注意力模式的新方法。
+## 26. `cs.CV` - 通过球坐标进行嵌入压缩 [PDF](https://arxiv.org/pdf/2602.00079), [HTML](https://arxiv.org/abs/2602.00079)
+### Authors
+Han Xiao
+### Background
+当前在高维单位向量嵌入中，存在需要高度精确表示的问题，导致压缩方法较少且效果不佳。特别是对于文本、图像和多向量嵌入，数据量庞大且需要保持高精度，使得直接减少数据存储的需求技术瓶颈。
+### Innovation
+本文提出了一种epsilon有界压缩方法，通过利用高维单位向量的球坐标集中在π/2附近，使得IEEE 754指数崩溃为单一值，高层位小数部分变得可预测，从而实现对两者进行熵编码。这种方法在无需损失精度的情况下，实现了1.5倍的压缩比，优于之前最好的无损方法25%。
+### Conclusion
+该方法在浮点32精度下通过浮点32机器epsilon界定了重建误差，使得重建值与原始值在浮点32精度下无法区分。评估结果显示，在26种不同配置下，文本、图像和多向量嵌入表现出了持续的压缩改进，而在BEIR基准测试中检索性能未出现可测量的下降。
+## 27. `cs.CV` - 用于文本到图像合成的用户友好型生成模型偏好提示框架 [PDF](https://arxiv.org/pdf/2402.12760), [HTML](https://arxiv.org/abs/2402.12760)
+### Authors
+Nailei Hei,Qianyu Guo,Zihao Wang,Yan Wang,Haofen Wang,Wenqiang Zhang
+### Background
+精心设计的提示显示出指导文本到图像模型生成出色图像的潜力。尽管现有的提示工程方法可以提供高层次的指导，但由于新用户输入的提示与模型偏好提示之间的差距，使得新用户难以通过手动输入提示获得所需的结果。为了弥合用户输入行为与模型训练数据集之间的差距，作者首先构建了一个新的粗糙-精细粒度提示数据集（CFP），并提出了一种新的用户友好型精细文本生成框架（UF-FGTG）用于自动提示优化。
+### Innovation
+作者构造了一个新的结合粗糙和精细粒度提示的文本到图像任务数据集（CFP），并提出了一种新的框架（UF-FGTG），该框架可以将用户输入的提示自动转换为模型偏好提示。具体来说，作者提出了一种提示精炼器，不断重写提示以增强用户选择与其独特需求相符的结果的能力。同时，该方法还整合了文本到图像模型中的图像相关损失函数到文本生成的训练过程中，以生成模型偏好提示，并提出了一种自适应特征提取模块以确保生成结果的多样性。
+### Conclusion
+实验表明，作者的方法能够生成比先前的先进方法更具视觉吸引力和多样性的图像，平均在六个质量和美学指标上提高5%。
+## 28. `cs.CV` - 复值全息辐射场 [PDF](https://arxiv.org/pdf/2506.08350), [HTML](https://arxiv.org/abs/2506.08350)
+### Authors
+Yicheng Zhan,Dong-Ha Shin,Seung-Hwan Baek,Kaan Akşit
+### Background
+物理渲染领域的关键进展之一是对光的波动性质建模。目前方法通常依赖于基于强度的中间步骤，且全息渲染过程往往是计算密集型的。
+### Innovation
+提出了一种复值全息辐射场方法，该方法利用多视角图像直接优化场景表示，使用复值高斯基本体来表示与场景几何学对齐的振幅和相位值，无需依赖单视角计算和基于强度的中间步骤，从而加快全息渲染速度30-10,000倍，同时保持与先进全息方法相当的图像质量。
+### Conclusion
+这项工作代表了在建模光波动性质和场景3D几何表示之间的表示差距方面向前迈出的有希望的一步。
+## 29. `cs.CV` - 通过视觉符号诊断、纠正和从操作失败中学习 [PDF](https://arxiv.org/pdf/2512.02787), [HTML](https://arxiv.org/abs/2512.02787)
+### Authors
+Xianchao Zeng,Xinyu Zhou,Youcheng Li,Jiayou Shi,Tianle Li,Liangming Chen,Lei Ren,Yong-Lu Li
+### Background
+机器视觉-语言-行动（Vision-Language-Action, VLA）模型在机器人操作方面取得了显著进展，但在故障诊断和从故障中学习方面仍存在局限性。现有故障数据集多在仿真环境中生成，这限制了其在现实世界中的推广。
+### Innovation
+引入了ViFailback框架，用于诊断机器人操作故障并提供文本和视觉纠正指导。该框架利用显式的视觉符号以提高注释效率。此外，还发布了ViFailback数据集，包括58,126个视觉问答（Visual Question Answering, VQA）对及其对应的5,202个现实世界操作轨迹，并基于该数据集建立了ViFailback-Bench基准测试，包括针对封闭性和开放性评估的ViFailback-Bench Lite和ViFailback-Bench Hard。最后，通过结合ViFailback-8B视觉语言模型和VLA模型，展示了其在真实世界机器人实验中帮助VLA模型从故障中恢复的能力。
+### Conclusion
+基于上述研究，ViFailback框架和数据集能够显著提升VLA模型的故障诊断和纠正能力，并通过实际操作验证了该模型的有效性。
+## 30. `cs.CV` - ScrollScape：利用视频扩散先验解锁32K图像生成 [PDF](https://arxiv.org/pdf/2603.24270), [HTML](https://arxiv.org/abs/2603.24270)
+### Authors
+Haodong Yu,Yabo Zhang,Donglin Di,Ruyi Zhang,Wangmeng Zuo
+### Background
+扩散模型在生成具有传统尺寸的图像方面表现出色，但在生成极高分辨率且极端纵横比（EAR）的图像时，往往难以维持结构完整性，导致诸如物体重复和空间碎片化等问题。这些问题是由于静态文本到图像模型主要基于传统尺寸的图像分布进行训练，缺乏稳健的空间先验。因此，需要克服这一瓶颈，以便生成高质量的图像。
+### Innovation
+ScrollScape 提出了一种新框架，将以视频生成过程的形式重新构建极纵横比图像合成。通过两种核心创新将大面积画布的空间扩展映射为视频帧的时间演化。具体而言，ScrollScape 利用视频模型内在的时间一致性作为强大的全局约束，确保长期结构完整。Scanning Positional Encoding（扫描位置编码）机制将全局坐标分配到帧中，充当一个灵活的移动相机。Scrolling Super-Resolution（滚动超分辨率）则利用视频超分辨率先验来绕过内存瓶颈，高效扩展输出到前所未有的32K分辨率。
+### Conclusion
+ScrollScape 方法通过细调一个3K多比例图像数据集有效地将预训练的视频先验与极纵横比生成任务对齐。广泛的评估表明，它显著优于现有的图像扩散基线，解决了严重的局部缺陷问题。因此，这种方法克服了内在的结构性瓶颈，确保在不同领域极端尺度下实现卓越的整体一致性和视觉保真度。
