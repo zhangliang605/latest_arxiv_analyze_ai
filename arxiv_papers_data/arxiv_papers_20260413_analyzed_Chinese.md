@@ -1,0 +1,264 @@
+# 20260413
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - ConsistRM：通过一致性自训练提高生成奖励模型 [PDF](https://arxiv.org/pdf/2604.07484), [HTML](https://arxiv.org/abs/2604.07484)
+### Authors
+Yu Liang,Liangxin Liu,Longzheng Wang,Yan Wang,Yueyang Zhang,Long Xia,Zhiyuan Sun,Daiting Shi
+### Background
+生成奖励模型（GRMs）作为一种新的方法，通过提供比传统标量奖励模型更强大的表示能力和灵活性，被用于使大规模语言模型（LLMs）与人类偏好对齐。然而，GRMs面临两大挑战：依赖于昂贵的人类标注数据限制了其扩展性，且自我训练方法往往表现出不稳定性，容易被奖励诈骗。
+### Innovation
+本研究提出了一种名为ConsistRM的一致性自训练框架，它能够实现有效的GRM训练而无需人类标注数据。该框架通过引入一致意识答案奖励和一致意识批评奖励，提供可靠的伪标签并确保时间一致性，以及评估多个批评的一致性并分配细粒度的奖励，从而实现更稳定的模型优化。
+### Conclusion
+在四个基模型的五个基准数据集上进行的实验表明，ConsistRM相比经典强化微调（RFT）平均提高了1.5%。进一步的分析表明，ConsistRM增强了输出一致性并减轻了由于输入顺序导致的位置偏见，证明了一致意识奖励在改进GRMs方面的有效性。
+## 2. `cs.AI` - CLEAR: 通过代理反思对比学习实现上下文增强 [PDF](https://arxiv.org/pdf/2604.07487), [HTML](https://arxiv.org/abs/2604.07487)
+### Authors
+Linbo Liu,Guande Wu,Han Ding,Yawei Wang,Qiang Zhou,Yuzhe Lu,Zhichao Xu,Huan Song,Panpan Xu,Lin Lee Cheong
+### Background
+大型语言模型代理依赖有效的模型上下文来获取任务相关的信息进行决策。现有的上下文工程方法主要依赖于过去经验生成的上下文及其检索机制的再利用。然而，从过去任务中检索的上下文需要执行代理进行适应，以适应新的情况，从而给底层的大规模语言模型带来了额外的推理负担。
+### Innovation
+我们提出了一种使用代理反思对比学习实现上下文增强的生成框架(CLEAR)。CLEAR首先利用一个反思代理对过去的执行轨迹进行对比分析，并总结每个观察到的任务有用的信息，这些总结作为监督微调数据来训练一个上下文增强模型(CAM)。然后，我们进一步使用强化学习优化CAM，奖励信号通过运行任务执行代理获得。通过学习生成任务特定的知识而非从过去检索知识，CAM产生了更符合当前任务的上下文。
+### Conclusion
+我们在AppWorld和WebShop基准测试集上进行了全面评估。实验结果表明，CLEAR在AppWorld测试集上将任务完成率从72.62％提高到81.15％，在WebShop子集上平均奖励从0.68提高到0.74，优于基线代理。我们的代码已在公开提供：this https URL。
+## 3. `cs.AI` - 代理版权、数据抓取与人工智能治理：在人工智能时代的科斯式交易 [PDF](https://arxiv.org/pdf/2604.07546), [HTML](https://arxiv.org/abs/2604.07546)
+### Authors
+Paulius Jurcys,Mark Fenwick
+### Background
+本文探讨了快速部署多机构人工智能系统如何重新塑造版权法和创意市场的基础。现有的版权框架难以有效管理大规模、快速且缺乏人类监督的人工智能代理介导的互动。论文指出现有框架在这方面存在局限，并提出了代理版权的概念，即人工智能代理代表创作者和用户来进行版权作品的访问、归属和补偿谈判。虽然多代理生态系统可以带来效率提升和交易成本降低，但也可能导致自主代理之间的协调问题、冲突和共谋。为应对这些市场失灵，论文提出了一种监督多代理治理框架，该框架结合了法律规则和原则、技术协议以及机构监督，强调事前和事后协调机制，旨在在市场失灵固化为系统性危害之前进行纠正。通过将规范性约束和监控功能嵌入多代理架构中，监督治理旨在使代理行为与版权法的核心价值观保持一致。
+### Innovation
+本文引入了代理版权的概念，这是一种新的治理模型，旨在通过人工智能代理管理版权作品的访问、归属和补偿。同时，论文提出了一种监督多代理治理框架，整合了法律规则、技术协议和机构监督，以纠正市场失灵。这种治理框架旨在更好地适应人工智能时代，促进公平和合法的版权市场。
+### Conclusion
+本文指出，人工智能不应仅仅被视为一种破坏性的力量，而是可以作为治理工具，帮助恢复创造产业基于市场的秩序。合适设计的代理版权能够为人工智能时代的版权市场提供可扩展、公平且具有法律意义的道路。
+## 4. `cs.AI` - DCVerse中的双环控制：通过数字孪生推进数据中可靠的人工智能部署 [PDF](https://arxiv.org/pdf/2604.07559), [HTML](https://arxiv.org/abs/2604.07559)
+### Authors
+Qingang Zhang,Yuejun Yan,Guangyu Wu,Siew-Chien Wong,Jimin Jia,Zhaoyang Wang,Yonggang Wen
+### Background
+现代数据中心规模和复杂性的增长给平衡能源效率与停机风险带来了重大挑战。尽管深度强化学习（DRL）显示出强大的智能控制潜力，但在关键任务系统中的部署受到数据稀缺性和缺乏实时预评估机制的限制。
+### Innovation
+本文介绍了基于数字孪生的双环控制框架（DLCF），旨在克服这些挑战。框架包含三个核心实体：物理系统、数字孪生和由多种DRL代理组成的策略水库。这些组件通过实时数据采集、数据同化、DRL策略训练、预评估和专家验证的双环机制相互作用。理论分析显示，DLCF可以提高样本效率、泛化性、安全性和优化性。
+### Conclusion
+通过DCVerse平台实现并通过对真实世界数据中心冷却系统的案例研究进行验证，表明我们的方法在不违背SLA要求的情况下，可实现高达4.09%的能源节省。此外，该框架提高了策略的可解释性，支持更加可信的DRL部署。本文为数据中基于AI的控制提供了可靠的基础，并指出了对整体优化的未来扩展。
+## 5. `cs.AI` - Rhizome OS-1: Rhizome的半自主药物发现操作系统 [PDF](https://arxiv.org/pdf/2604.07512), [HTML](https://arxiv.org/abs/2604.07512)
+### Authors
+Yiwen Wang,Gregory Sinenka,Xhuliano Brace
+### Background
+该研究介绍了一种半自主发现系统，其中多模态AI代理作为一个跨学科发现团队运作，承担计算化学家、药物化学家和专利代理人的角色，编写并执行分析代码，视觉评估分子候选物，评估专利可行性，并根据实验筛选反馈调整生成策略。r1是一个2.46亿参数的图神经网络（GNN），在8亿分子上进行训练，可以在分子图上直接生成新颖的化学物质。该系统进行了两个在肿瘤学领域的实验，分别针对BCL6和EZH2，形成了跨三个策略层级的药物化学假设，并生成了2355-2876个针对每个靶点的新分子。所生成的所有Murcko骨架结构在ChEMBL中未见有记载，且与已知活性分子的Tanimoto距离为0.56-0.69，显示系统能够生成结构独特的化学物质。
+### Innovation
+该发明引入了一种半自主发现系统，其特点是多模态AI代理能够像跨学科团队一样协作，包括计算化学家、药物化学家和专利代理人的角色，直接在分子图上生成新颖的化学物质。r1是一个大型的图神经网络，专门针对8亿个分子进行训练，能够生成全新的化学物质并显著提高药物发现的效率与适应性。
+### Conclusion
+由图原生生成工具和基于物理的评分优化的半自主代理系统，为小分子药物发现提供了一个现代操作系统的基础。Rhizome OS-1能够支持大规模、快速和适应性的逆向设计，从而开辟了早期药物发现的新范式。
+## 6. `cs.AI` - NIH基金研究中人工智能采用的分析 [PDF](https://arxiv.org/pdf/2604.07424), [HTML](https://arxiv.org/abs/2604.07424)
+### Authors
+Navapat Nananukul,Mayank Kejriwal
+### Background
+理解美国国立卫生研究院(NIH)资助项目中人工智能(AI)和机器学习(ML)的应用状况对于研究资金策略、机构规划和健康政策至关重要。大型语言模型(LLMs)的进步显著改变了研究景观分析，使研究人员能够从成千上万份非结构化研究文档中进行大规模语义提取。本文通过一种人类在环中的研究方法，展示了LLMs自动分类和大规模总结研究描述的方法。
+### Innovation
+本文介绍了用LLMs进行大规模自动分类和总结研究描述的人类在环方法。研究发现指出AI构成NIH基金15.9%，存在于发现、预测和数据整合等多个领域，并且存在从研究开发阶段到临床部署的广泛差距，同时健康不平等研究受到严重忽视。
+### Conclusion
+研究结果确立了一个框架，即基于证据的政策干预措施来使NIH的AI项目与健康公平目标和战略研究优先事项保持一致。
+## 7. `cs.AI` - 信任AI，质疑自我：紧迫感对人机交互中自我信心的影响 [PDF](https://arxiv.org/pdf/2604.07535), [HTML](https://arxiv.org/abs/2604.07535)
+### Authors
+Baran Shajari,Xiaoran Liu,Kyanna Dagenais,Istvan David
+### Background
+现有研究表明，与AI系统的互动能够增强人类用户对AI的信任。本文指出，在这种互动中一个往往被忽视的元素是紧迫感，即AI代理促使人类用户采取行动时的紧迫感，例如提供建议或指导。尽管紧迫感可能不会影响对AI的信任，但它可能损害人类用户的自信心和自我效能感。
+### Innovation
+文章通过一项实验指出，用户在逐步融入人机系统时可能会有更高的工作自信心，而不是直接暴露于人机系统中。这为软件工程师和决策者提供了新的视角。
+### Conclusion
+长期来看，用户的自信心的降低可能导致性能下降、决策失误、人为错误，进而造成不可持续的AI系统。研究结果表明，在人机交互中，逐步引导用户可能有助于提升他们的自信心。
+## 8. `cs.AI` - ReflectRM: 通过统一判断框架中的自我反思提升生成奖励模型 [PDF](https://arxiv.org/pdf/2604.07506), [HTML](https://arxiv.org/abs/2604.07506)
+### Authors
+Kai Qin,Liangxin Liu,Yu Liang,Longzheng Wang,Yan Wang,Yueyang Zhang,Long Xia,Zhiyuan Sun,Houde Liu,Daiting Shi
+### Background
+奖励模型（RMs）是强化学习从人类反馈（RLHF）管道中的关键组件，直接决定了大型语言模型（LLMs）的对齐质量。近年来，生成奖励模型（GRMs）因其更高的可解释性和更强的泛化能力而成为一种更优越的范式。然而，现有方法主要集中在结果级监督上，忽视了分析过程质量，限制了其潜在能力。
+### Innovation
+本文提出了ReflectRM，一种新颖的GRM，通过自我反思来评估分析质量和增强偏好建模。ReflectRM在联合建模响应偏好和分析偏好下进行统一生成框架的训练。在推理过程中，利用其自我反思能力识别最可靠的分析，从中得出最终的偏好预测。实验结果表明，ReflectRM在四个基准上表现一致提高，Qwen3-4B的准确率平均提高了3.7%。进一步的实验还确认响应偏好和分析偏好相互强化。值得注意的是，ReflectRM显著减轻了位置偏见，比领先的GRMs提高了10.2%，使其成为更稳定的评估者。
+### Conclusion
+实验结果表明，ReflectRM在四个基准上都保持了性能的提升，尤其是在Qwen3-4B上取得了平均3.7%的准确率提高，并且通过减小位置偏见达到10.2%的改进，确立了自己作为更稳定评估者的优势。
+## 9. `cs.AI` - M-ArtAgent: 基于证据的多模态代理用于隐性艺术影响发现 [PDF](https://arxiv.org/pdf/2604.07468), [HTML](https://arxiv.org/abs/2604.07468)
+### Authors
+Hanyi Liu,Zhonghao Jiu,Minghao Wang,Yuhang Xie,Heran Yang
+### Background
+隐性艺术影响虽然视觉上看似合理，却常常缺乏记录，从而导致历史上的归属问题：相似性是必要的，但不足以作为证据。大多数先前的系统将影响发现简化为嵌入相似性或标签驱动的图完成，而最近的多模态大型语言模型（LLMs）仍然容易受到时间不一致性和未验证归属的影响。现有的方法未能解决这种情况，因此需要一种基于证据的方法来进行隐性影响的发现。
+### Innovation
+这篇文章介绍了M-ArtAgent，这是一种基于证据的多模态代理，它将隐性影响的发现重新定义为概率性的裁决。M-ArtAgent遵循四个阶段的协议，包括调查、佐证、反驳和裁定，这些阶段由类似于ReAct的控制器执行。它从图像和生平记录中组装可验证的证据链，遵循艺术历史的公理，并通过提示隔离的批评者对每个假设进行反事实反驳。两个基于理论的操作：StyleComparator进行沃尔夫林形式分析和ConceptRetriever进行基于ICONCLASS的图像学定位，确保中间声明的形式可审计性。
+### Conclusion
+通过将多模态感知与领域特定的反事实反驳相结合，M-ArtAgent证明了隐性影响分析受益于基于历史的裁决，而不是简单的模式匹配。在平衡的WikiArt影响基准-100（WIB-100）中，包含100位艺术家和2,000个有向成对，M-ArtAgent的正类F1达到了83.7%，麦考利系数（MCC）为0.666，接收器操作特征曲线下面积（ROC-AUC）为0.910，表明其在隐性影响发现方面的有效性。
+## 10. `cs.AI` - SPEAR: 多智能体协调在智能合约审核中的工程案例研究 [PDF](https://arxiv.org/pdf/2602.04418), [HTML](https://arxiv.org/abs/2602.04418)
+### Authors
+Arnab Mallick,Indraveni Chebolu,Harmesh Rana,Seema Pangal
+### Background
+本文提出了一个应用于智能合约审计的多智能体协调框架SPEAR，该框架基于现有的多智能体系统（MAS）模式，应用于现实中的安全分析工作流程。
+### Innovation
+SPEAR将审计工作视为由专门化智能体协调的任务，包括一个规划智能体、执行智能体和修复智能体。这些智能体通过协商和拍卖协议进行协调，并通过AGM一致的修订来更新各自的信念。这种多智能体设计被与中心化和流水线为基础的替代方案进行比较，尤其是在协调行为、恢复行为和资源使用方面。
+### Conclusion
+通过实证研究显示，SPEAR在控制失败情况下，相比集中化的和流水线式的替代方案，在协调、恢复行为和资源使用方面具有优势。
+## 11. `cs.AI` - 使用SHAP值的计算机视觉模型对抗逃逸攻击 [PDF](https://arxiv.org/pdf/2601.10587), [HTML](https://arxiv.org/abs/2601.10587)
+### Authors
+Frank Mollard,Marcus Becker,Florian Roehrbein
+### Background
+该论文介绍了利用SHAP值对计算机视觉模型进行白盒攻击的方法。论文展示了对抗性规避攻击如何通过降低输出置信度或诱导错误分类来损害深度学习模型的性能。这类攻击尤为隐蔽，因为它们可以在不被人类视觉察觉的情况下欺骗算法的感知。
+### Innovation
+论文提出利用SHAP值量化在推断阶段输入对输出的重要性，对比了SHAP攻击与众所周知的快速梯度符号方法。实验证明，SHAP攻击在梯度隐藏场景中生成错误分类更为稳健。
+### Conclusion
+研究表明，SHAP攻击在针对梯度隐藏场景生成错误分类方面比现有方法更具鲁棒性，对抗性规避攻击可能对模型性能造成显著影响。
+## 12. `cs.AI` - RDSplat: 针对2D和3D扩散编辑的3D高斯点阵鲁棒水印 [PDF](https://arxiv.org/pdf/2512.06774), [HTML](https://arxiv.org/abs/2512.06774)
+### Authors
+Longjie Zhao,Ziming Hong,Zhenyang Ren,Runnan Chen,Mingming Gong,Tongliang Liu
+### Background
+3D Gaussian Splatting (3DGS) 已成为高保真3D资产的主要表示方法，但由于数字水印技术的有效性在对抗3D扩散编辑时仍有待改善，因此保护这些资产依然是一个挑战。现有的3DGS水印方法只能抵御经典失真，但在2D和3D扩散编辑影响下，这些编辑会通过掩盖嵌入的水印同时保持视觉可信度，从而使得水印变得无效。
+### Innovation
+RDSplat 是首个能够抵抗2D和3D扩散编辑的3DGS水印框架。它通过低通滤波器的作用，将100位水印嵌入到3D场景中的低频结构中，并利用替代策略来提高训练效率。GeoMark（一种基于ViT-S/16的专用解码器）结合了解扩散编辑和视点变化的几何变换特性，进一步增强了鲁棒性。
+### Conclusion
+RDSplat 在四种基准数据集上进行了广泛测试，实验结果表明其在经典鲁棒性（位准确率0.811）和扩散鲁棒性（位准确率0.701）方面表现出色，可以根据需要在3到7分钟内完成细调，在单个RTX 4090 GPU上运行。
+## 13. `cs.AI` - ModeX：无评估者最佳N选择框架在开放生成中的应用 [PDF](https://arxiv.org/pdf/2601.02535), [HTML](https://arxiv.org/abs/2601.02535)
+### Authors
+Hyeong Kyu Choi,Sharon Li
+### Background
+对于大型语言模型（LLMs）而言，在开放性任务中选择高质量的单个输出结果仍然是一项基本挑战，尤其是在没有标准答案的情况下。尽管Best-of-N和自一致性方法显示了生成多个版本并汇总以提高性能的效果，但现有方法通常依赖外部评估者、奖励模型或精确字符串匹配投票，这限制了其实用性和效率。
+### Innovation
+本文提出了无评估者Best-of-N选择框架ModeX，其通过构建候选生成的相似性图并采用谱聚类递归地选取具有代表性的质心来确定模态输出，即生成文本中最占主导地位的语义共识。此外，还提出了ModeX-Lite，赋予该框架早期剪枝以提高效率。在包括文本摘要、代码生成和数学推理等多种开放性任务中，该方法表现优于标准单路径和多路径基线。
+### Conclusion
+ModeX和ModeX-Lite框架提供了针对开放生成任务的一种高效和稳健的解决方案，简化了模型选择过程，改进了生成结果的准确性。相关代码在此处提供：this https URL.
+## 14. `cs.AI` - Q-Probe: 通过情境感知代理探测将图像质量评估扩展到高分辨率 [PDF](https://arxiv.org/pdf/2601.15356), [HTML](https://arxiv.org/abs/2601.15356)
+### Authors
+Xiang Li,Xueheng Li,Yu Wang,Xuanhua He,Zhangchi Hu,Weiwei Yu,Chengjun Xie
+### Background
+强化学习（RL）让多模态大型语言模型（MLLMs）在图像质量评估（IQA）中实现了更优的人类偏好对齐。然而，现有的基于RL的IQA模型通常依赖粗粒度的全局视角，难以捕捉高分辨率场景中的细粒度局部降解。新兴的“以图思考”范式通过缩放机制提供了多尺度视觉感知，但直接应用于IQA会导致“裁剪意味着降解”的错误偏见，并误将自然景深视为伪影。
+### Innovation
+我们提出了Q-Probe，这是一种第一代用于高分辨率情境感知代理探测的IQA框架。首先，我们构建了Vista-Bench，一个针对性的基准，专门用于高分辨率IQA中的细粒度局部降解分析。其次，我们提出了一种分阶段的训练范式，该范式逐步使模型与人类偏好对齐，同时通过一种新颖的情境感知裁剪策略消除因果偏见。
+### Conclusion
+广泛的实验表明，Q-Probe在高分辨率设置中实现了最先进的性能，并且在不同分辨率尺度上保持了更优的有效性。
+## 15. `cs.AI` - 量子机器学习时代中的机器遗忘：一项实证研究 [PDF](https://arxiv.org/pdf/2512.19253), [HTML](https://arxiv.org/abs/2512.19253)
+### Authors
+Carla Crivoi,Radu Tudor Ionescu
+### Background
+在经典深度学习中，机器遗忘（MU）已被广泛研究，但在变量子电路（VQCs）和量子增强架构中的行为仍知之甚少。该研究首次通过实证方式探究了混合量子-经典神经网络中的机器遗忘。
+### Innovation
+1. 适应广泛的方法（基于梯度、蒸馏、正则化和认证技术）到量子设置。2. 引入两种新的针对混合模型的遗忘策略。3. 实验结果显示，量子模型可以支持有效的遗忘，但结果取决于电路深度、纠缠结构和任务复杂度。
+### Conclusion
+这些发现为量子机器遗忘提供了初步的实证见解，并强调了量子感知算法和理论保证的需求，尤其是在量子机器学习系统不断扩展规模和能力的情况下。实验代码已公开发布。
+## 16. `cs.AI` - 金融嵌入表示法在财务新闻情感分析中的比较评估 [PDF](https://arxiv.org/pdf/2512.13749), [HTML](https://arxiv.org/abs/2512.13749)
+### Authors
+Joyjit Roy,Samaresh Kumar Singh
+### Background
+金融市场中，情感分析对于理解市场至关重要。现有标准自然语言处理（NLP）方法在应用到小型数据集时遇到重大挑战。本研究通过对比评估基于嵌入的技术在资源受限环境下的表现，旨在解决情感分类中的基本数据稀缺问题。
+### Innovation
+研究对比评估了Word2Vec、GloVe和sentence transformer在手动标注的349条金融新闻标题上的情感分类性能，并结合梯度提升技术。研究结果指出，预训练嵌入在数据不足的阈值以下时，其效果会逐渐下降。验证集规模小导致模型选择时发生过拟合。
+### Conclusion
+研究发现，嵌入质量本身不能解决情感分类中基本的数据稀缺问题。对于有限标注数据的从业者，应考虑采用少样本学习、数据增强或词典增强混合方法等替代策略。
+## 17. `cs.AI` - TreeAdv: 树结构优势重分配的组基强化学习 [PDF](https://arxiv.org/pdf/2601.03703), [HTML](https://arxiv.org/abs/2601.03703)
+### Authors
+Lang Cao,Hui Ruan,Yongqian Li,Peng Chao,Wu Ning,Haonan Song,Renhong Chen,Yitong Li
+### Background
+组基强化学习，如Group Relative Policy Optimization (GRPO)，用于使大规模语言模型在复杂推理任务上保持一致。标准GRPO将每次回放轨迹视为独立的扁平序列，并为所有令牌分配单个序列级别的优势，这导致样本效率低下，并倾向于产生冗长、重复的思维链条而未能提高逻辑深度。
+### Innovation
+我们引入了TreeAdv（树结构优势重分配），使组回放轨迹的树结构在探索和优势分配中显式化。TreeAdv基于一个通过高不确定性决策分叉、低不确定性令牌在回放中共享的熵驱动采样方法构建一组树（一个森林）。通过重新分配完整回路（所有叶节点）的优势，TreeAdv为树段中的令牌级别优势进行聚合。TreeAdv可以轻松应用于GRPO或GSPO等组基目标。
+### Conclusion
+在10个数学推理基准测试中，TreeAdv在使用与标准监督、数据和解码预算相同的生成令牌数量时，始终优于GRPO和GSPO。
+## 18. `cs.AI` - Mind the Generative Details: Direct Localized Detail Preference Optimization for Video Diffusion Models [PDF](https://arxiv.org/pdf/2601.04068), [HTML](https://arxiv.org/abs/2601.04068)
+### Authors
+Zitong Huang,Kaidong Zhang,Yukang Ding,Chao Gao,Rui Ding,Ying Chen,Wangmeng Zuo
+### Background
+生成文本到视频的扩散模型对于生成高质量的视频至关重要。现有的直接偏好优化（DPO）方法依赖于多样本排名和特定任务的评论模型，这种方法效率低且常常产生含糊不清的整体监督。
+### Innovation
+提出了一种名为LocalDPO的新型后训练框架，该框架从实际视频中构建局部偏好对，并在时空区域级别优化对齐。设计了一个自动化管道以高效地收集偏好对数据，生成每提示仅需一次推理的偏好对，避免了外部评论模型或手动标注的需要。具体来说，使用高质量的实际视频作为正样本，通过局部破坏它们并仅恢复被遮罩的区域来生成对应的负样本。
+### Conclusion
+实验表明，LocalDPO在Wan2.1和CogVideoX上在视频保真度、时间一致性以及人类偏好的评分方面均优于其他后训练方法，确立了一种更高效且精细的视频生成器对齐范式。
+## 19. `cs.AI` - DYCP: 动态上下文修剪用于具有LLM的长形式对话 [PDF](https://arxiv.org/pdf/2601.07994), [HTML](https://arxiv.org/abs/2601.07994)
+### Authors
+Nayoung Choi,Jonathan Zhang,Jinho D. Choi
+### Background
+大型语言模型（LLMs）越来越多地处理长对话，其中包含频繁的主题转换。虽然最近的LLM支持扩展的上下文窗口，但在实际中，由于推理成本和延迟的限制，需要高效地管理对话历史。现有方法中，线下记忆构建技术需要对对话历史进行预处理和存储，增加了复杂性和成本。因此，本文提出了DyCP，一种轻量级的上下文管理方法，该方法在LLM外部实现，可动态地识别并检索基于当前回合的上下文相关对话段落，而无需构建离线内存。
+### Innovation
+DyCP方法在LLM外部实施，能够动态识别并检索基于当前回合的上下文相关对话段落，无需构建离线内存，同时在三个长形式对话基准测试集LoCoMo、MT-Bench+和SCM4LLMs以及多种LLM后端上，DyCP展示了竞争力的生成质量，更具选择性地使用上下文，并提高了推理效率。
+### Conclusion
+DyCP方法在保留对话顺序的情况下，可以适配性地进行高效的上下文选择。实验结果显示，DyCP在多个长形式对话基准上达到了可竞争的生成质量，且通过更高效的选择上下文，提高了推理效率。
+## 20. `cs.LG` - 在联邦学习中自动化聚合策略选择 [PDF](https://arxiv.org/pdf/2604.08056), [HTML](https://arxiv.org/abs/2604.08056)
+### Authors
+Dian S. Y. Pang,Endrias Y. Ergetu,Eric Topham,Ahmed E. Fetit
+### Background
+联邦学习允许在无需集中数据的情况下进行协作模型训练，但其效果取决于聚合策略的选择。这一选择并不简单，因为不同数据集、异构程度和计算限制下的性能差异显著。
+### Innovation
+提出了一个端到端的框架，能够自动化、优化和适应性的选择联邦学习的聚合策略。该框架分为单次试验模式和多次试验模式：单次试验模式利用大语言模型从用户提供的或自动检测到的数据特征中推断合适的策略；多次试验模式则利用轻量级遗传搜索在预算受限的情况下高效探索替代策略。
+### Conclusion
+大量实验表明，这种方法在非IID条件下提高了稳健性和泛化能力，减少了对人工干预的需求。总体而言，这项工作通过自动化最关键的设计决策——聚合策略选择，朝着更易于使用和适应的联邦学习迈进。
+## 21. `cs.LG` - 从普遍到个性化执行力：重新审视算法救济中的个性化 [PDF](https://arxiv.org/pdf/2604.08030), [HTML](https://arxiv.org/abs/2604.08030)
+### Authors
+Lena Marie Budde,Ayan Majumdar,Richard Uth,Markus Langer,Isabel Valera
+### Background
+算法救济旨在提供具体行动建议，使个人能够改变不利的模型结果。先前的研究广泛探讨了效率、稳健性和公平性等属性，但个人化在算法救济的作用依然主要处于隐含状态而未被充分探索。现有方法通过用户互动来引入个性化因素，通常缺乏明确的个性化定义，并未对个性化对其他效果的下游影响进行系统的分析。
+### Innovation
+本文正式定义个性化为个体可操作性，分为两类维度：硬约束指明哪些特征是个人可操作的，以及软约束捕捉人们对行动值和成本的偏好。在因果算法救济框架内，通过前先验用户提示的方法，让个体在生成任何救济建议之前表达偏好。通过广泛的实证研究，探讨个性化与关键救济标准（包括有效性、成本和可行性）的相互作用，并揭示出个性化约束（特别是硬约束），会对救济建议的可行性与有效性产生严重的影响。此外，还发现个性化可以揭示社会人口统计组别在救济行动成本和可行性方面的差异。
+### Conclusion
+研究结果突显了在算法救济中对个人可操作性进行正确定义、谨慎操作和严格评估的重要性，这将有助于更公平和有效的算法救济实践。
+## 22. `cs.LG` - 处理具有潜状态动力学的上下文 bandit 的直接方法 [PDF](https://arxiv.org/pdf/2604.08149), [HTML](https://arxiv.org/abs/2604.08149)
+### Authors
+Zhen Li,Gilles Stoltz(LMO, CELESTE, HEC Paris)
+### Background
+我们重访 Nelson 等人（2022年）提出的有限臂线性 bandit 模型，其中上下文和奖励由有限隐藏马尔可夫链控制。Nelson 等人（2022年）通过将其归约到线性上下文 bandit 进行处理；但他们实际上做了一个简化，即让奖励是给定观测上下文后的隐藏状态的概率后验的线性函数，而不是隐藏状态的实际函数。他们的分析（但不是他们的算法）也没有考虑到 HMM 参数的估计，而且仅仅处理了期望中的，不是高概率的界限，这些界限还受到不必要的复杂模型依赖性（如奖励缺口）的影响。
+### Innovation
+相比之下，我们研究了一个更自然的模型，该模型直接依赖于隐藏状态（这建立在已观测到的上下文的自然依赖性上），并且还获得了针对一种完全适应策略（此策略在线估计 HMM 参数）的更强大的高概率遗憾界。这些界不依赖于奖励函数，并通过 HMM 参数的估计依赖于模型。
+### Conclusion
+作为一种完全自适应策略，我们获得的高概率遗憾界不依赖于奖励函数，并且只通过 HMM 参数的估计依赖于模型。
+## 23. `cs.LG` - 基于预测嵌入的多模态潜在推理 [PDF](https://arxiv.org/pdf/2604.08065), [HTML](https://arxiv.org/abs/2604.08065)
+### Authors
+Ashutosh Adhikari,Mirella Lapata
+### Background
+工具增强的多模态推理使视觉语言模型(VLMs)能够通过与外部工具（例如裁剪、深度估计）交互来改善感知能力。然而，此类方法会带来显著的推理延迟，需要专门的监督，并且容易出现工具误用的问题。
+### Innovation
+提出Pearl（预测嵌入对齐的空间推理）框架，这是一种受JEPA启发的体系结构，在潜空间中完全从专家工具使用轨迹学习，从而在推理时无需显式调用工具。Pearl直接从多模态轨迹学习预测嵌入，同时保留标准的视觉-语言生成流程，使得该方法模型无关、容易训练，并支持多步骤工具使用。pearl在多个感知基准测试中的实验结果表明，其与标准监督微调和基于重建的潜在推理方法相媲美或表现更好。
+### Conclusion
+Pearl与标准监督微调和基于重建的潜在推理方法相比，提供了与标准视觉-语言生成流程兼容的解决方案，同时更好地支持多步骤工具使用。实验证据表明，基于重建的方法主要学习嵌入而不是潜空间中的图像编辑，促使预测嵌入学习作为一种更合乎规范的替代方案。
+## 24. `cs.LG` -  shift-和拉伸不变的非负矩阵分解及其在发射 tomography 数据中脑组织分割中的应用 [PDF](https://arxiv.org/pdf/2604.08161), [HTML](https://arxiv.org/abs/2604.08161)
+### Authors
+Anders S. Olsen,Miriam L. Navarro,Claus Svarer,Jesper L. Hinrich,Morten Mørup,Gitte M. Knudsen
+### Background
+动态的神经影像数据，如血液或脑脊液中的放射性示踪剂运输的发射摄影测量数据，往往表现出弥散性质。这些性质引入了距离相关的时延、尺度差异以及伸展效应，限制了传统线性建模和分解方法的有效性。
+### Innovation
+提出了一种变形和拉伸不变的非负矩阵分解框架。该方法估计整数和非整数的时间偏移以及时间伸展，所有操作都在频域中进行，其中时间偏移对应相位修改，通过零填充或截断处理伸展。
+### Conclusion
+该模型在PyTorch中实现，并在合成数据和脑发射摄影数据上进行了验证，表明该模型能够处理伸展效应，为脑组织结构提供更详细的表征。
+## 25. `cs.LG` - 长时记忆嵌入用于平衡个性化 [PDF](https://arxiv.org/pdf/2604.08181), [HTML](https://arxiv.org/abs/2604.08181)
+### Authors
+Andrii Dzhoha,Egor Malykh
+### Background
+现代基于Transformer的序列推荐器在捕获短期意向方面表现出色，但往往会遭受近期偏差的影响，忽视了稳定长期偏好。尽管延长序列长度是一个直观的解决方案，但在计算上效率低，且最近的交互往往会主导模型的注意力。
+### Innovation
+本文提出了一种长时嵌入（LTE）框架，作为一种高惯性的上下文锚点，用于桥接短期和长期偏好之间的差距。此外，研究如何将因果语言建模策略集成到LTE中，解决了数据泄漏问题，并评估了两种表示方法：按启发式平均和基于语义基础的非对称自编码器，后者可启用行为微调并保持稳定性。
+### Conclusion
+通过在Zalando进行的A/B测试，结果表明，在延迟窗口中使用LTE作为一种上下文前缀令牌可显著提高用户参与度和财务指标。
+## 26. `cs.LG` - Value-Guidance MeanFlow for Offline Multi-Agent Reinforcement Learning [PDF](https://arxiv.org/pdf/2604.08174), [HTML](https://arxiv.org/abs/2604.08174)
+### Authors
+Teng Pang,Zhiqiang Dong,Yan Zhang,Rongjian Xu,Guoqiang Wu,Yilong Yin
+### Background
+Offline multi-agent reinforcement learning (MARL)旨在从预先收集的数据集中学到最优的联合策略，需要在最大化全局回报和缓解离线数据中的分布偏移之间进行权衡。近期的研究使用扩散或流生成模型来捕捉多智能体之间的复杂联合策略行为；然而，这些方法通常依赖于多步骤迭代采样，这降低了训练和推理效率。尽管进一步的研究通过知识蒸馏等方法提高了采样效率，但这对行为正则化系数仍然敏感。
+### Innovation
+我们提出了一种名为Value Guidance Multi-agent MeanFlow Policy (VGM$^2$P)的简单的基于流的策略学习框架，它可以实现无正则化系数依赖的条件行为克隆，同时高效地生成动作。VGM$^2$P 使用全局优势值来引导智能体的合作，将最优策略学习视为条件行为克隆。此外，它利用无分类引导MeanFlow策略训练和执行，在多智能体场景中增强策略的表达性和推理效率。
+### Conclusion
+在包含离散和连续动作空间的任务上的实验表明，即使通过条件行为克隆训练，VGM$^2$P也能高效地实现与最新方法相当的性能。
+## 27. `cs.LG` - PriPG-RL: 有实时可行的模型预测控制的优先规划引导强化学习在部分可观测系统中的应用 [PDF](https://arxiv.org/pdf/2604.08036), [HTML](https://arxiv.org/abs/2604.08036)
+### Authors
+Mohsen Amiri,Mohsen Amiri,Ali Beikmohammadi,Sindri Magnuśson,Mehdi Hosseinzadeh
+### Background
+本研究探讨在部分可观测性条件下通过利用仅在训练过程中可用的特权即时可行规划代理来训练强化学习（RL）策略的问题。研究者将其形式化为一个部分可观测马尔可夫决策过程（POMDP），其中规划代理拥有访问近似动力学模型和特权状态信息的能力，以指导仅观察部分状态投影的学习代理。
+### Innovation
+本文引入了即时可行的模型预测控制（MPC）算法作为规划代理，并提出了从规划代理中提炼特权知识的Planner-to-Policy Soft Actor-Critic（P2P-SAC）方法，以减轻部分可观测性的问题。研究结果表明这种方法提高了样本效率和最终策略性能。理论分析和技术验证（包括模拟和真实环境测试）支持了这一框架的有效性。
+### Conclusion
+研究通过在模拟环境（NVIDIA Isaac Lab）和真实世界环境（Unitree Go2 四足机器人）中进行严格测试，验证了优先规划引导的强化学习框架，并展示了其在复杂、障碍丰富的环境中导航的潜力。
+## 28. `cs.LG` - 视觉机器卸载中的偏差再分配：忘记一个群体是否伤害了另一个群体？ [PDF](https://arxiv.org/pdf/2604.08111), [HTML](https://arxiv.org/abs/2604.08111)
+### Authors
+Yunusa Haruna,Adamu Lawan,Ibrahim Haruna Abdulhamid,Hamza Mohammed Dauda,Jiaquan Zhang,Chaoning Zhang,Shamsuddeen Hassan Muhammad
+### Background
+机器卸载使模型能够选择性地忘记训练数据，这是由GDPR和CCPA等隐私法规驱动的。然而，其公平性影响尚未完全被探索。本文探讨了当模型忘记一个人口群体时，它是否中和了该概念，或将概念重新分配给相关的群体，从而可能放大偏见的问题。研究使用了CLIP模型（ViT/B-32、ViT-L/14、ViT-B/16），在涉及年龄和性别交叉群体的零样本分类设置下进行。评估了三种卸载方法：Prompt Erasure，Prompt Reweighting，和Refusal Vector，通过群体准确率转移、人口统计公平差异和再分配评分进行评估。
+### Innovation
+研究通过在 celebA 数据集上使用 CLIP 模型，探讨了在年龄和性别交叉群体下，机器卸载导致的偏差再分配现象，特别关注了三种卸载方法（Prompt Erasure，Prompt Reweighting，和Refusal Vector）的效果。研究发现，去学习并不会消除偏见，而是主要沿着性别边界重新分配，在所有模型规模中去除占主导地位的年轻女性群体时，模型性能始终被转移到年老女性群体，揭示了CLIP嵌入空间中从前存在的性别主导结构。尽管使用Refusal Vector方法可以减少再分配，但会造成无法实现完全忘记，并显著降低保留性能。这项研究强调了当前卸载方法的局限性：在不考虑嵌入几何的情况下，它们存在的风险放大了留下的群体中的偏见。
+### Conclusion
+研究结果表明，卸载偏见没有消除，而是主要沿着性别边界重新分配。去除主导的年轻女性群体在所有模型规模下始终将性能转移到老女性群体上，揭示了CLIP嵌入空间中以前存在的性别主导结构。尽管Refusal Vector方法可以减少再分配，但它无法实现完全忘记，并显著降低了保留的性能。这些发现强调了当前卸载方法的一个基本限制：在不考虑嵌入几何的情况下，存在放大留下的群体的偏见的风险。
+## 29. `cs.LG` - Alloc-MoE: 优化高效Mixture-of-Experts推断的激活预算分配 [PDF](https://arxiv.org/pdf/2604.08133), [HTML](https://arxiv.org/abs/2604.08133)
+### Authors
+Baihui Liu,Kaiyuan Tian,Wei Wang,Zhaoning Zhang,Linbo Qiao,Dongsheng Li
+### Background
+Mixture-of-Experts (MoE) 因其稀疏激活机制已成为扩展大型语言模型的主要架构。然而，在资源受限的部署场景中，大量专家激活导致了推理过程中的关键延迟瓶颈。现有的减少专家激活的方法可能会导致模型性能大幅下降。
+### Innovation
+提出了激活预算的概念，并提出了一种名为 Alloc-MoE 的统一框架，该框架在层和 token 层面上协调优化预算分配以最小化性能下降。引入了在层层面的 Alloc-L 和在 token 层面的 Alloc-T，分别通过灵敏度分析和动态规划确定最优的专家激活分配，并基于路由分数动态重新分配激活以优化预算分配。
+### Conclusion
+大量的实验结果表明，在受限的激活预算下，Alloc-MoE 可以保持模型性能。特别是在 DeepSeek-V2-Lite 模型上实现了预填充速度提升1.15倍和解码速度提升1.34倍的效果，同时只使用了一半的原始预算。
