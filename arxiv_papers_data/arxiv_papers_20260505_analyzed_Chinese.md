@@ -1,0 +1,264 @@
+# 20260505
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - AgentFloor: 小型开放权重模型能在工具使用梯子上攀升多高？ [PDF](https://arxiv.org/pdf/2605.00334), [HTML](https://arxiv.org/abs/2605.00334)
+### Authors
+Ranit Karmakar,Jayita Chatterjee
+### Background
+生产型代理系统在每次用户请求时会产生大量模型调用，这些调用通常都短小、结构化且例行。现有评估未能直接解决这样一个实际问题：代理工作流中哪些部分需要大规模前沿智能，哪些部分可以由较小的模型处理？
+### Innovation
+本文介绍了一种名为AgentFloor的决定性30任务基准，涵盖了指令跟随、工具使用、多步协调、以及在持续约束下进行长周期规划等六个层级的能力梯。该基准利用16款不同的开放权重模型（参数量从0.27B到32B）和GPT-5进行了为期16,542次评分的评估，揭示了模型需求的关键边界，指出小型和中型开放权重模型已经足以应对大部分工具使用工作，而 liners则显示出在需要长期规划和可靠约束跟踪的任务中仍具备优势。此项研究还发现，这不是单纯的规模问题，部分失败可以通过有针对性的干预来应对。
+### Conclusion
+研究提出了一项实用的设计原则，即对于例行操作的整体基础部分，使用较小的开放权重模型；对于真正需要深层次规划和控制的少数类任务，则保留大规模前沿模型。此外，研究还公开了基准测试、研究工具及全部运行数据集。
+## 2. `cs.AI` - Token Arena: 在AI推理中统一能量与认知的持续基准 [PDF](https://arxiv.org/pdf/2605.00300), [HTML](https://arxiv.org/abs/2605.00300)
+### Authors
+Yuxuan Gao,Megan Wang,Yi Ling Yu
+### Background
+现有的公共推理基准测试主要在模型和供应商层面评估AI系统的性能，但决策时通常基于端点级别的综合因素，包括特定的量化、解码策略、地区和服务器堆栈。本文指出，实际部署决策时，关注的是端点级别的聚合因素，如（提供商、模型、库存单元）组成的端点，在这些因素下，展示的具体量化、解码策略、地区和服务器堆栈有所不同。
+### Innovation
+本文引入了TokenArena，这是一种持续的基准测试，它在端点级别沿五个核心轴测量推理性能（输出速度、第一令牌时间、工作负载综合价格、有效上下文和端点保真度），并将这些指标与能耗估计综合成三个主要综合指标：每正确答案焦耳数、每正确答案成本以及端点保真度（与第一方参考输出分布的相似程度）。研究发现，相同模型在不同端点上，在数学、代码上的平均准确率差异可达12.5个百分点，在指纹相似度上的第一方差异可达12个百分点，在尾部延迟上的差异则是一个数量级，以及每正确答案模型能耗的差异为6.2倍。作者还展示了工作负载感知的综合定价重新排列了排行榜：在聊天预设（3:1输入:输出）下前十名端点，在检索增强预设（20:1）下全部跌出前十。推理预设（1:5）则提升了一线封闭模型，而聊天预设在价格上惩罚了这些模型。
+### Conclusion
+TokenArena 引入了一种方法论，而不仅仅是一个单一的排名。作者发布了该框架、模型、探针和评估框架下的v1.0排行榜快照。与专门的排行榜不同，TokenArena提供详细的来源资料和限制条件，并欢迎外部复现。
+## 3. `cs.AI` - Agentic AI for Trip Planning Optimization Application [PDF](https://arxiv.org/pdf/2605.00276), [HTML](https://arxiv.org/abs/2605.00276)
+### Authors
+Tiejin Chen,Ahmadreza Moradipari,Kyungtae Han,Hua Wei,Nejib Ammar
+### Background
+智能车辆的行程规划越来越多地依赖选择最优路线而非仅仅生成可行行程，由于诸如出行时间、能耗以及交通状况等多种交互因素会影响行程的质量。现有的规划系统大多为可行性导向的规划,并且当前的基准只能提供有限的事实依据来防止对优化性能进行客观评估。因此,本研究旨在通过引入一种代理人工智能框架来解决这些问题，该该框架能够通过编制专门的代理来交互进行交通管理、充电管理和以及目的地选择等功能“以优化行程规划，并 提供了行程规划优化数据集 ” 以供细化分析提供权威的最优解决方案和类别信息分析
+### Innovation
+本研究的创新之处在于 引入了一种代理人工智能框架 通过编制专门的代理来协同完成交通管理、 兟能充电以及目的地选择等功能而显著提高行程规划的优化性能 且通过提供提供的行程规划优化数据集为细致分析提供了权威的最优解决方案和类别信息分析
+### Conclusion
+实验结果表明 该代理人工智能框架在TOP基准测试中 达到了7 7.74thon 的精确率 幙超单个体代理和基于流程的多对代理框架 baselines的性能 证明了集中协调的代理理原则对于稳健的行程规划优化的重要性
+## 4. `cs.CL` - A11y-Compressor: 通过视觉上下文重构和冗余减少提高GUI代理观察效率的框架 [PDF](https://arxiv.org/pdf/2605.00551), [HTML](https://arxiv.org/abs/2605.00551)
+### Authors
+Michito Takeshita,Takuro Kawada,Takumi Ohashi,Shunsuke Kitada,Hitoshi Iyatomi
+### Background
+AI代理与图形用户界面（GUI）交互需要有效的观察表示来实现可靠的对接。通用可用性树是一种常用的文字格式，用于编码UI元素属性，但它存在冗余问题，并且缺乏空间关系等结构性信息。
+### Innovation
+我们提出了A11y-Compressor框架，将线性的通用可用性树转换为紧凑且结构化的表示。Compressed-a11y的实现采用了轻量级且结构化的转换流水线，包括模态检测、冗余减少和语义结构化。
+### Conclusion
+实验表明，Compressed-a11y将输入令牌减少了原数目的22%，并在平均任务成功率上提高了5.1个百分点。
+## 5. `cs.CL` - AGoQ: 用于大规模语言模型高效分布式训练的激活和梯度量化 [PDF](https://arxiv.org/pdf/2605.00539), [HTML](https://arxiv.org/abs/2605.00539)
+### Authors
+Wenxiang Lin,Juntao Huang,Luhan Zhang,Laili Li,Xiang Bao,Mengyang Zhang,Bing Wang,Shaohuai Shi
+### Background
+量化是一种关键方法，能够降低训练大型语言模型（LLMs）所需的GPU内存需求。然而，当前的方法对于4位激活和8位梯度并不有效，这很容易导致收敛速度缓慢或准确率下降。
+### Innovation
+我们提出了一种名为AGoQ的新方法，结合了两个新的技术：1）一种基于层类型和流水线阶段的分层激活量化算法，用于各种层分配适当的位宽以实现接近4位激活存储；2）一种通过使用8位梯度存储和保持精度的8位全归约通信来减少内存使用和缩短通信时间的梯度量化算法。
+### Conclusion
+我们在不同的LLM规模上使用了两个GPU集群（最多64个GPU）进行了广泛的实验，结果表明，我们的AGoQ相比最先进的训练系统（如Megatron-LM，COAT和DeepSpeed）可以将内存减少高达52%，训练速度提高1.34倍，同时在预训练收敛性和下层任务的准确性方面与LLaMA架构保持一致。
+## 6. `cs.CL` - 文本相似性在机器翻译下是否不变？基于政治宣言语料库的证据 [PDF](https://arxiv.org/pdf/2605.00618), [HTML](https://arxiv.org/abs/2605.00618)
+### Authors
+Daria Boratyn,Damian Brzyski,Albert Leśniak,Wojciech Łukasik,Maciej Rapacz,Jan Rybicki,Wojciech Słomczyński,Dariusz Stolicki
+### Background
+本文探讨了句嵌入余弦相似度在不同语言之间的机器翻译中的稳定性。通过使用包含超过2800个政治党派平台的语料库，这些平台已被欧盟eTranslation服务翻译成英语，研究了机器翻译如何影响文本相似性。研究方法避免直接测量翻译引起的语义变化，采用多模型对原语言文本语义结构的一致性评估作为不变性的校准阈值。
+### Innovation
+本文提出了一种框架，用于评估不同语言的翻译过程中的文本相似性的不变性，而不依赖于特定的语料库或管道，可以自然地扩展到下游任务。通过这种评估方法，可以得出关于翻译如何与不同嵌入选择相互作用的四个假设的验证结果。
+### Conclusion
+研究结果显示，有十个语言的翻译过程显示出文本相似性的不变性，而另外四个语言则检测到了翻译后的语义变化。这些发现为理解和优化跨语言文本处理提供了重要参考。
+## 7. `cs.CL` - ControBench: An Interaction-Aware Benchmark for Controversial Discourse Analysis on Social Networks [PDF](https://arxiv.org/pdf/2605.00513), [HTML](https://arxiv.org/abs/2605.00513)
+### Authors
+Ta Thanh Thuy,Jiaqi Zhu,Xuan Liu,Lin Shang,Reihaneh Rabbany,Guillaume Rabusseau,Lihui Chen,Zheng Yilun,Sitao Luan
+### Background
+研究人们如何通过在线交流跨越政治和意识形态分歧对于理解政治极化、虚假信息和内容审核有重要意义。但现有的数据集量仅捕获了这一问题的一部分：它们要么保留部分部分内容同时忽略互动部分要么仅建模结构缺乏丰富的语义信息，另一些则代表对话但不提供分析的统计用户层面的意识形态身份.因此,本文介绍了ControBench 这该讨论分析的基准数据集，它结合异构社交互动图与丰富的文本语义信息.
+### Innovation
+ControBench结合了异构社交互动图与丰富的文本语义信息,它题目从Reddit三个话题（堕胎 on宗教)的讨论中构建建而成,包含1111 1用户 on  4,, 83帖子 on 26on on 27次之间的互动.在图上的涵盖了评论和部分用户节点部分 on部分部分富会带有语义增富的边;其中一个评论一评论用户边表示表储存回复以及该回应的回复以保持当地论证论的上下文;用户标签则来自上的自我声明的Reddit贴纸 on这为政意识形态身份提供了可规模的代理当手动标注有困难时 ControBench数据集表现较低的负调整亲和性(N调整亲((特朗普: 00077 对话:  0006 宗宗教:  ? for反映了现实世界争论的真实跨切辩论结果上研究结果表明在跨话题和也就是家庭特别是政意识形态边界上含糊这一 ControBench是一项具挑战性和现实性的基准数据集用于讨论分析研究之中.
+### Conclusion
+本文介绍了ControBench作为一个互动意识的基准数据集
+## 8. `cs.CL` - H-RAG在SemEval-2026任务8中的应用：分层父-子检索用于多轮RAG对话 [PDF](https://arxiv.org/pdf/2605.00631), [HTML](https://arxiv.org/abs/2605.00631)
+### Authors
+Passant Elchafei,Hossam Emam,Mohamed Alansary,Monorama Swain,Markus Schedl
+### Background
+该论文讨论了在多轮对话检索增强生成（multi-turn conversational settings）中，任务A侧重于独立的检索质量评估，而任务C则评估端到端的检索增强生成（RAG）性能，着重于准确的答案生成和可信的证据承载。
+### Innovation
+提出了一种分层的父-子RAG管道，该管道在生成过程中将细粒度的子级检索与父级上下文重构分开处理。文档被分割成重叠的句子级子块，而完整的文档分别作为父级单位保留以提供连贯的上下文。检索技术结合了混合密集稀疏搜索、可调加权和基于嵌入的相似性重新评分。检索到的证据在父级进行聚合，并提供给指令调整的语言模型以用于生成响应。
+### Conclusion
+H-RAG在任务A中取得了nDCG@5得分0.4271，在任务C中获得了调和平均分数0.3241（RB_agg: 0.2488，RL_F: 0.2703，RB_llm: 0.6508），这表明检索配置和父级聚合在多轮RAG性能中至关重要。
+## 9. `cs.CL` - 超越基准：MathArena 作为评估大语言模型数学能力的平台 [PDF](https://arxiv.org/pdf/2605.00674), [HTML](https://arxiv.org/abs/2605.00674)
+### Authors
+Jasper Dekoninck,Nikola Jovanović,Tim Gehrunger,Kári Rögnvalddson,Ivo Petrov,Chenhao Sun,Martin Vechev
+### Background
+大语言模型（LLMs）在数学合作中的能力越来越强，但现有的静态基准测试已不再足够用来评估其进展：这些基准通常范围狭窄、容易饱和且很少更新，这使得模型之间的可靠比较和时间上的进展追踪变得困难。
+### Innovation
+本研究建立了一个新的评价平台——MathArena，其范围从仅涵盖最终答案的奥林匹克问题，扩展到了涵盖多种任务的持续维护系统，包括基于证明的竞赛、研究级arXiv问题以及形式化证明。此外，研究团队定期设计新的基准测试，以确保MathArena保持具有挑战性。最强模型GPT-5.5 在2026 USA数学奥林匹克问题上达到了98%，在研究级问题中达到了74%，这表明前沿模型现在可以轻松解决极其复杂的数学问题，突显了持续维护的评估平台对追踪LLMs在数学推理中的快速进展的重要性。
+### Conclusion
+该研究表明，持续维护的评估平台，如MathArena，对于跟踪大语言模型在数学推理方面的快速进展至关重要。
+## 10. `cs.CL` - BanglaSocialBench: 用于评估 Bangladeshi 社交互动中大型语言模型社会语用和文化一致性的基准 [PDF](https://arxiv.org/pdf/2603.15949), [HTML](https://arxiv.org/abs/2603.15949)
+### Authors
+Tanvir Ahmed Sijan,S. M Golam Rifat,Pankaj Chowdhury Partha,Md. Tanjeed Islam,Md. Musfique Anwar
+### Background
+大型语言模型在多语言流畅性方面表现出色，但仅靠流畅性并不能确保语言使用符合社会规范。在高语境语言中，交际能力不仅需要语言表达的技巧，还需要对社会等级、人际关系角色和交往规范的敏感度，这些规范直接渗透在日常语言中。孟加拉语通过其三等级代词系统、亲属称呼和深植于文化的社会习俗体现了这一挑战。因此，研究团队开发了 BanglaSocialBench，这是第一个通过上下文依赖的语言使用来评估社会语用能力的基准，而非简单依赖于事实性回忆。该基准涵盖了三个领域：孟加拉语称呼用语、亲属关系推理和社会习俗，并包括1,719个由母语孟加拉人撰写和验证的文化背景实例。
+### Innovation
+BanglaSocialBench 是首个专门针对孟加拉语社会语用能力的基准工具，旨在通过上下文依赖的语言使用评估大型语言模型的社会语用和文化一致性，而非仅仅依赖事实性知识。研发者对该基准进行了零样本评估，并揭示了一些系统性的文化偏差问题。
+### Conclusion
+研究表明，大型语言模型在社会语用方面存在显著障碍，频繁地使用过于正式的称呼方式、未能识别多个符合社会规范的称呼代词、并且在宗教背景下错误地混用亲属称呼。分析结果显示，社会语用错误往往具有系统性而非随机性，例如，不恰当的称呼选择集中在逆序的社交等级关系和非正式情境中，这揭示了目前大型语言模型在推断和应用符合当地文化的社会语言使用方面存在持续的局限性。
+## 11. `cs.CL` - 关于降低成本的增强LLM作为判断者技术 [PDF](https://arxiv.org/pdf/2604.13717), [HTML](https://arxiv.org/abs/2604.13717)
+### Authors
+Ryan Lail,Luke Markham
+### Background
+近年来，使用语言模型来评分或按顺序排列候选回答已成为一种灵活的替代人类评价的方法，特别是在强化学习从人类反馈（RLHF）流水线、基准测试和应用层评价中。然而，输出可靠性很大程度上依赖于提示和聚合策略的选择。
+### Innovation
+本文介绍了四种“即插即用”技术——集成评分、任务特定标准注入、校准上下文和自适应模型提升，以提高针对RewardBench 2的LLM评估者准确性。这些技术均以控制随机评估者的噪声为主题，通过集成作为一种蒙特卡洛平均处理，标准注入以提高响应间区别度，以及每次评分的方差作为不确定性信号。试验表明，集成评分和任务特定标准注入（后者几乎无成本）可以达到85.8%的准确率，比基线高出13.5个百分点。此外，校准上下文和自适应模型提升也提升了性能，但这两项在成本-准确性的帕累托前沿上并不占主导地位。小型模型尤其受益于集成评分，使得高准确率的LLM评估者在低成本下变得可行。
+### Conclusion
+这些技术在不同模型提供商之间具有通用性，并已应用于OpenAI GPT和Anthropic Claude的评估。
+## 12. `cs.CL` - 记忆在LLM时代的模块架构与策略：统一框架下的分析 [PDF](https://arxiv.org/pdf/2604.01707), [HTML](https://arxiv.org/abs/2604.01707)
+### Authors
+Yanchen Wu,Tenghui Lin,Yingli Zhou,Fangyuan Zhang,Qintian Guo,Xun Zhou,Sibo Wang,Xilin Liu,Yuchi Ma,Yixiang Fang
+### Background
+在大型语言模型（LLL M) 为基础的代理 (agents) 中， 为了完成长期复杂任务 (例如： 夂回合对话，游戏玩以及科学发现)， 内存 (memory) 是核心模块， 这允许知识在迭代和算法进化过程中积累。现有文献中已经提出了多种内存管理策略和方法，但这些方法还在不同的实验设置下缺乏系统和全面的比较比较。与分析，
+### Innovation
+本文总结了一种整体框架， 从高层视角整合现有代理内存策略，并, 我们对代表性代理内存在两个著名的基准上进行了广泛的比较，并 详细分析了这方面的效度，并 作为实验过程的副一个副产品，我们提出了一种利用现有模块的方法，该方法超越现有的最先进技术。 通过这些发现 我们为未来的探索铺平了新的方向
+### Conclusion
+基于我们实验分析中的发现 我们认为深入理解现有内存行为将 提供将可以为我们未来的研究所提供宝贵见
+## 13. `cs.CL` - SCOon: A on Hybrid Query for Clinical Trial Data [PDF](https://arxiv.org/pdf/2604.25120), [HTML](https://arxiv.org/abs/2604.25120)
+### Authors
+Suparno Roy Chowdhury,Manan Roy Choudhury,Tejas Anvekar,Muhammad Ali Khan,Kaneez Zahra Rubab Khakwani,Mohamad Bassam Sonbol,Irbaz Bin Riaz,Vivek Gupta
+### Background
+临床试验数据推理是现代医疗研究中的重要组成部分。然而，在 这类数据往往储存在可见单元中， 但推理需通过语义理解、规范化、提取和轻析过程来从得 衊数据获取所需信息。 过往的研究方法往往在隐含假设下受到限制，从而导致推理错误。动机来源于此， 本研究聚焦于如何从部分临床试验表格中 重新现隐含属性， 如药物剂量、疗效终点、随访状态等 这此研究提出 SCON (Structured Clinical Hybrid Planning for Evidence retrieval in clinical trials) 框架，将此框架采用多语模型 (multi-LLM) 计划就将其任务分解为行列选择、结构化注解和执行过程。 记者应用推理规则和输出结构化结果来减少歧义， 相较于直接文本提示法， SCON 提供了更强大的准确性和效率权衡。此研究给出了临床试验推理问题的特殊性问题的见解，并 且提出了一种基于混合计划者的分解方法。
+### Innovation
+本研究提出 SCON 模型将临床试验数据推理作为一项特殊任务处理。 通过使用多种大型语言模型 (multi onLL-LM) 进行特定任务拆分法如行列选择、 供热描述和 执行等 在此基础上应用推理法则来生成结构化输出。相较于以往研究直接基于文本提示的方法' SCON 模型在准确性和效率上 提供引 实验证了显著的优势。此外 on 这此研究还 尙一种基于混合规划者 on 的分解方法突显了在复杂推理任务中， 对特定子 计划拆分方法的重要性。
+### Conclusion
+研究结果显示 on SCON 模型在临床试验数据推理上 通过多语言模型协助推理产生了更高的准确性 '同时这样的提高了准确性和计算效率之间的权衡。此研究表明临床试验数据推理是一个独特的任务需求 ' 蠷需要特殊的处理方法。在上 这此方面 on 本研究提出了一个基于混合规划者 on 的框架 '此框架为未来的临床研究提供了新的视角和
+## 14. `cs.CV` - BOLT: Online Lightweight Adaptation for Preparation-Free Heterogeneous Cooperative Perception [PDF](https://arxiv.org/pdf/2605.00405), [HTML](https://arxiv.org/abs/2605.00405)
+### Authors
+Kang Yang,Tianci Bu,Peng Wang,Deying Li,Yongcai Wang
+### Background
+现有的异构协同感知方法大多依赖于预先准备，如离线联合训练或定制合作伙伴模型适应。但在实际场景中，由于代理通常由不同的开发者独立训练且偶尔在线上相遇，这种预处理通常并不实用。
+### Innovation
+提出了BOLT，一种轻量级的即插即用模块，通过自我作为教师的知识蒸馏在线调整邻近特征，不需要任何先见知识标记。BOLT利用高置信度的自我感知特征来指导跨代理特征域对齐，同时让邻居在自我置信度低的区域提供特征。BOLT仅使用0.9M可训练参数，在没有先见知识标记的情况下，将AP@50提高了32.3个点，优于简单的未调整融合。
+### Conclusion
+BOLT在DAIR-V2X和OPV2V数据集上，不同编码器对和融合策略中，持续优于自我感知的结果。代码可通过以下链接获取: this https URL.
+## 15. `cs.CV` - 通过紧凑的潜在多智能体协作扩展视频理解 [PDF](https://arxiv.org/pdf/2605.00444), [HTML](https://arxiv.org/abs/2605.00444)
+### Authors
+Kerui Chen,Jinglu Wang,Jianrong Zhang,Ming Li,Yan Lu,Hehe Fan
+### Background
+多模态大语言模型（MLLMs）在视觉语言理解方面取得了进步，但在长视频任务中面临着固有的感知上下文预算限制。现有代理方法通过基于规则的预处理减轻了这一问题，但通常会带来信息损失、高成本和依赖文本中介等因素。
+### Innovation
+提出了一种端到端的多智能体协作框架（MACF），它解耦了每个代理的感知预算与全局视频复杂度，能够在保持视觉保真度的同时实现可扩展的视频理解。MACF将视频划分为局部预算化的片段，并通过代理本有的潜在通信协议实现整体推理。每个代理将局部观测压缩成任务足够的紧凑表示，共享给中央协调器进行高效的协作。
+### Conclusion
+在多种视频理解基准上的广泛实验表明，MACF在相同预算约束下始终优于最先进的MLLM和多智能体系统，证明了我们潜在协作的有效性，能够实现可扩展的视频理解。
+## 16. `cs.CV` - 超越启发式方法：基于学习的3D高斯点云密度控制 [PDF](https://arxiv.org/pdf/2605.00408), [HTML](https://arxiv.org/abs/2605.00408)
+### Authors
+Zhenhua Ning,Xin Li,Jun Yu,Guangming Lu,Yaowei Wang,Wenjie Pei
+### Background
+尽管3D高斯点云渲染（3DGS）展示了出色的实时渲染性能，其效果仍受限于对密度控制依赖于启发式规则。尽管对这些手工规则进行了许多改进，但这些方法内在缺乏适应复杂几何的多样性场景的灵活性。
+### Innovation
+本文提出了一种从固定启发式规则向完全可学习策略的密度控制范式转变。引入了LeGS框架，将密度控制重新表述为通过强化学习（RL）优化的参数化策略网络。至关重要的是，基于灵敏度分析设计了一个精确量化的奖励函数，用于精确量化每个高斯点对重建质量的边际贡献。通过推导闭式解，简化了奖励计算的复杂度从中O(N^2)降低至O(N)。
+### Conclusion
+在Mip-NeRF 360、Tanks & Temples和Deep Blending数据集上的广泛实验表明，LeGS在重建质量和效率之间取得了显著的优越平衡，超越了现有最先进的方法。代码将在该链接 https://github.com/XXX 释放。
+## 17. `cs.CV` - LIMSSR: LLM-驱动的在训练阶段不完全多模态观测下的序列到评分推理 [PDF](https://arxiv.org/pdf/2605.00434), [HTML](https://arxiv.org/abs/2605.00434)
+### Authors
+Huangbiao Xu,Huanqi Wu,Xiao Ke,Yuxin Peng
+### Background
+现实世界中的多模态学习往往受限于模态的缺失。当前的不完全多模态学习（IML）方法通常假设在训练时具备完整的模态数据，以此提供重建监督或跨模态先验。然而，实际应用场景中，训练时未必能获得完整的多模态数据。因此，本文提出了在训练过程中观测不完整的多模态数据下如何进行有效学习的研究背景。
+### Innovation
+本文提出了一种名为LIMSSR（大规模语言模型驱动的不完全多模态序列到评分推理）的框架。该框架将不完全多模态学习的问题重新表述为条件序列推理任务。LIMSSR利用大规模语言模型的语义推理能力，通过提示引导上下文感知模态补全和多维表示融合，从现有上下文中推断出潜在语义。为了缓解幻觉，引入了一种掩码感知双路径聚合来动态校准推理不确定性。该方法在三个动作质量评估数据集上的实验表明，LIMSSR在不依赖完整训练数据的情况下显著优于现有方法。
+### Conclusion
+广泛的实验结果表明，LIMSSR能够在不依赖于完整训练数据的情况下显著超越现有的基础方法，从而确立了一种新的数据高效多模态学习的范式。代码可在https://github.com/...publicly获得。
+## 18. `cs.CV` - 从压缩CT中学习：基于特征注意力风格转换和结构化因子投影的资源高效医学图像分析 [PDF](https://arxiv.org/pdf/2605.00448), [HTML](https://arxiv.org/abs/2605.00448)
+### Authors
+Shadid Yousuf,S.M. Mahbubur Rahman,Mohammed Imamul Hassan Bhuiyan
+### Background
+人工智能在医学成像中的应用受到高计算复杂性和处理大型体数据资源密集型处理的阻碍。胸部CT扫描提供了比常规X射线投影更丰富的诊断信息，但由于未压缩体积图像（通常存储在NIfTI或DICOM格式）的处理负担，其在基于AI的诊断中的使用仍然受到限制。为满足对低资源部署和高效电子数据传输的日益增长需求，该研究探讨了使用JPEG压缩的胸部CT体积进行胸部异常检测的可能性。
+### Innovation
+提出了特征注意力风格转换（FAST），这是一种新颖的蒸馏框架，将高保真CT表示中的激活模式和结构关系转移到压缩输入的空间体编码器上。通过结合Gram矩阵注意力风格保留与双重注意力特征对齐，FAST能够从降级的体积中提取稳健的特征。此外，引入了结构化因子投影（SFP），利用区块张量分解作为密集投影层的参数高效替代方案，将投影头参数减少了近一半。基于这种对比学习流水线（CT-Lite），结合SigLIP多模态对齐目标，实验表明，在CT-RATE、NIDCH和Rad-ChestCT三个数据集上，尽管使用了大量参数更少的压缩输入，CT-Lite在AUROC指标上仍能达到与未压缩输入基线相差5-7%的效果，这为在资源受限条件下基于AI的临床评价提供了新途径。
+### Conclusion
+通过基于特征注意力风格转换和结构化因子投影的组合，CT-Lite在压缩输入条件下实现了与未压缩输入基线相近的诊断性能，为在资源受限的环境下进行医学图像分析提供了新方法。
+## 19. `cs.CV` - GOR-IS：内在空间的3D高斯物体去除 [PDF](https://arxiv.org/pdf/2605.00498), [HTML](https://arxiv.org/abs/2605.00498)
+### Authors
+Yonghao Zhao,Yupeng Gao,Jian Yang,Jin Xie,Beibei Wang
+### Background
+最近在神经辐射场（NeRF）和3D高斯散点图（3DGS）方面的进展使得从多视图图像重建3D场景成为标准做法。从这样的3D表示中移除物体是一个基本的编辑任务，需要对被遮挡区域进行完整的无缝修补，确保几何和外观的一致性。尽管现有的方法在提高修补一致性方面取得了显著进展，但它们往往忽视了全局光照效果，导致物理不合理的结果。此外，这些方法在依赖视角的非朗伯表面方面存在问题，在这种表面中，外观随视角变化，导致不可靠的修补。
+### Innovation
+我们提出了一种新的框架——内在空间的3D高斯物体去除（GOR-IS），以实现物理一致性和视觉协调的3D物体去除。我们的方法将场景分解为内在组件，并明确建模光传输，以保持全局光照效果的一致性。此外，我们引入了一种内在空间修补模块，可以直接在材料和光照域中进行操作，有效地解决了非朗伯表面带来的挑战。
+### Conclusion
+我们在合成和真实世界数据集上的大量实验表明，我们的框架在物理一致性与视觉协调性方面显著改进了物体去除的效果，与现有的方法相比，在感知相似性（LPIPS）方面提高了13%，在峰值信噪比（PSNR）方面提高了2dB。所有代码公开可用。
+## 20. `cs.CV` - High-Speed Vision Improves Zero-Shots Semantic Understanding of Human Actions [PDF](https://arxiv.org/pdf/2605.00496), [HTML](https://arxiv.org/abs/2605.00496)
+### Authors
+Yongpeng Cao,Yuji Yamakawa
+### Background
+理解人类行为对于人-人类机器人交互至关重要，尤其是在需要对不熟悉或者难以标注的行为进行语义解释时。在快速快速或复杂的活动场景下,手集足够的标记数据进行监督学习具有挑战因此零样本方法可以在无需特定任务训练的情况下进行语义理解方面成为一种实用的替代方案。然而,最近大规模预训练模型的发展使得这种零样本推理成为可能但是时间分辨率对这些快速和细节化的动作影响依然被低估。
+### Innovation
+本文研究了时间分辨率对零样本语义理解人类高速行为的影响。利用特定的高速和微妙动作模式进行代表，提出了一个无需训练的流水线:包括预训练视频-语言模型进行语义表现和基于该模型的方法的推理进行行为对的成比较分析。通过不同帧率的控制实验表明时间分辨率显著提高了零样本环境下的语义可别性。进一步分析了基于跟踪的人体关节对于不同和样本观察下的角色作用的理解作用;定量评价表明高速视频提供了更丰富且有效的语义表示。
+### Conclusion
+这些发现强调了训练的环境中时间分辨率的重要性，并种方法在高速感知中可以增强语义理解能力。提示高进一步研究应关注时间分辨率的影响以提高零样本人类行为识别的能力。
+## 21. `cs.CV` - 利用视觉语言模型和 赖注弱注者的主动学习 [PDF](https://arxiv.org/pdf/2605.00480), [HTML](https://arxiv.org/abs/2605.00480)
+### Authors
+Phuong Ngoc Nguyen,Kaito Shiku,Ryoma Bise,Seiichi Uchida,Shinnosuke Matsuo
+### Background
+主动学习的目标是在有限的标注预算下，通过对有信息性的样本选择性线现监督来减低成本昂的注释成本。。 本研究探讨了视觉语言模型（VLMs） 如何可以进一步减少对 costly 的人类注释依赖性在主动学习框架上。 瑏发现，VLMs 在在具体粒度的任务上易 vary显著地体现得 poor表现于在细粒度的标签上而可以获取到准确的粗粒度标签上. 基于这一观察来本研究提出的是一种框架,该框架将細粒度的人类注注与粗粒度的模型生成的弱标签结合在实例一级上形使用一小部分可信的标记来进行精确识别列利用 Visual on the V 生成的标签系统中的 on Evaluation on U 和实验 on U UN和 FGVC-Aircraft 昷上所 摘示的方法在标注预算上始终优于现有的主动学习方法.
+### Innovation
+本研究创新地 one手基于视觉语言模型 V开发了一种新的框架,该框架结合结合精细粒度的人类注释与模型生成的粗粒度弱标签在实例一级上综合利用视觉语言模型 on on 栍图片级可信标记样本精确识别视觉语言模型生成的标签系统中 on base 兢于 U数据集上 and FGVC-Aircraft 上通过实验验证了提出的框架在标注预算上比更为优越.
+### Conclusion
+实验结果验证本研究提出的框架在标注预算有限的情况下始终优于其他现有方法从而进一步减少了对人工注释的依赖性提高利用视觉语言模型在标注预估阶段的的有限辅助有效地提升了模型培训效果.
+## 22. `cs.CL` - Turing [PDF](https://arxiv.org/pdf/2604.10418), [HTML](https://arxiv.org/abs/2604.10418)
+### Authors
+Eugene Eberbach
+### Background
+人工智能和及 计算机 科学 的 发展 与 数 布 （Kurt Gödel)、丘仕霖 (Alonzo Church) 以及 决 德 (von Neumann) 在 上 2 2 一门之 谵妄 有 密西根 昁 征 初 瘟 珞 万 (Alan Turing) 的 蔓利 之 个 重要 位置。
+### Innovation
+论文 重点 呈现 了 T 聨 , 币 
+### Conclusion
+在 本 , 论 文 衲主 了 TO 察 万,在)} 之 奶 之 幋,
+## 23. `cs.LG` - 使用部分范数进行张量化神经网络和张量网络算法的有效有限初始化 [PDF](https://arxiv.org/pdf/2309.06577), [HTML](https://arxiv.org/abs/2309.06577)
+### Authors
+Alejandro Mata Ali,Iñigo Perez Delgado,Marina Ristol Roura,Aitor Moreno Fdez. de Leceta
+### Background
+本文介绍了一种用于初始化张量化神经网络和张量网络算法的两种算法。这些算法利用部分计算的Frobenius范数和正线性条目和，根据涉及的张量网络类型的不同进行选择。该方法的核心在于通过迭代使用张量网络子网络的范数，从而通过已导致发散或零范数的范数的有限值来进行归一化。此外，这种方法还可以利用中间计算结果的重用。
+### Innovation
+该方法创新之处在于使用张量网络子网络的范数进行了迭代的归一化以避免发散或零范数；通过重用中间计算结果来提高效率。
+### Conclusion
+本研究表明该方法已在张量网络状态/张量火车（MPS/TT）和张量网络算子/张量火车矩阵（MPO/TT-M）层上进行了应用，并与其节点数、键维数和物理维数的关系进行了扩展性分析。所有代码均已公开提供。
+## 24. `cs.LG` - HyCOP: 混合组成算子用于PDE的可解释学习 [PDF](https://arxiv.org/pdf/2605.00820), [HTML](https://arxiv.org/abs/2605.00820)
+### Authors
+Jinpai Zhao,Nishant Panda,Yen Ting Lin,Eirik Valseth,Diane Oyen,Clint Dawson
+### Background
+本文讨论了一种用于偏微分方程(PDE)求解的方法，提出了HyCOP框架。HyCOP框架通过查询和条件化的手段，组合简单的模块（如对流、扩散、学习闭合、边界处理），学习参数化PDE解算器的操作。这种框架避免了学习庞大的单体映射，而是学习一个条件下的短程序策略，用于决定应用哪个模块及其持续时间，这基于运行时特征和状态统计。这种方法能够在任意查询时间评估混合代理，而不需要依赖于自回归展开。
+### Innovation
+HyCOP框架的创新之处在于它以模块化的方式学习PDE解操作，不同于直接学习单体映射。它能够根据运行特征和状态统计自适应选择和调整模块应用。HyCOP能够生成可解释的程序，并在多种PDE基准测试中表现出显著的性能改进。此外，HyCOP支持模块化转移，通过字典更新实现边界交换或残差充实等操作，使模型更加灵活。
+### Conclusion
+HyCOP框架通过将PDE求解过程分解为模块，实现了解析性强、性能优越的PDE解算。理论分析表明，HyCOP在表达能力上具有优势，并且能够通过误差分解进一步进行诊断和分析。该方法为理解和改进PDE解决过程提供了新的途径，尤其在复杂模型的应用中表现出巨大的潜力。
+## 25. `cs.LG` - Value Explicit Pretraining for Learning Transferable Representations [PDF](https://arxiv.org/pdf/2312.12339), [HTML](https://arxiv.org/abs/2312.12339)
+### Authors
+Kiran Lekkala,Henghui Bao,Sumedh A. Sontakke,Erdem Biyik,Laurent Itti
+### Background
+在视觉增强 孵学习代理中，理解视觉输入下完成特定任务的能力面临着多样化环境变化下的挑战。。现有方法依赖标记数据进行预训练，但在真实的环境变化中难以获取完全标注的数据。
+### Innovation
+1text Value Explicit Pretraining (VEP)作为一个新方法引入，通过对环境动力学和外观不敏感的表示进行学习来；利用亚标签监督对比损失促使模型在蒙特卡罗评估中找到共哪些捕捉任务目标的时空连续表示的表示代表；使用亚标签数据而非完全解决任务的数据进行预训练。
+### Conclusion
+实验结果表明VEP在现实环境模拟和如At阿特 Atari基准上上表现优于现有领先方法在高效学习新任务的能力；将未见过的任务的奖励提升最多达到3times倍，样本效率提升最多达到3倍。
+## 26. `cs.LG` - Mutatis Mutandis: 重新审视歧视测试中的对照对象 [PDF](https://arxiv.org/pdf/2405.13693), [HTML](https://arxiv.org/abs/2405.13693)
+### Authors
+Jose M. Alvarez,Salvatore Ruggieri
+### Background
+测试个体歧视涉及通过类似投诉人的对照对象（基于保护属性，如种族或性别）来推导出一个类似的决策结果档案，从而比较两者的决策结果。投诉人与对照对象对歧视测试至关重要。大多数歧视测试工具依赖这对来建立歧视证据。本文重新审视了在歧视测试中对照对象的角色，首次强调了生成对照的内在因果建模性质，提出了CP（ceteris paribus，保持其他条件不变）和MM（mutatis mutandis，适当调整之后）两种对照分类。
+### Innovation
+提出了CP（保持其他条件不变）和MM（适当调整之后）两种对照分类，其中MM对照允许投诉人与对照在非保护属性上存在差异，为机器学习方法提供了更复杂但也更具影响力的实现途径。
+### Conclusion
+通过现实世界的例子说明了CP和MM对照在歧视测试中的影响，展示了MM对照如何在歧视测试中提供一种更复杂但更有效的途径。
+## 27. `cs.LG` - GNN中缓解过度压缩和过度平滑的图重新布线：一项综述 [PDF](https://arxiv.org/pdf/2411.17429), [HTML](https://arxiv.org/abs/2411.17429)
+### Authors
+Hugo Attali,Davide Buscaldi,Nathalie Pernelle,Fragkiskos D. Malliaros
+### Background
+图神经网络是处理图结构数据的强大模型，但其效果受限于两个关键挑战：过度压缩和过度平滑。过度压缩压缩了远距离节点的信息，导致信息流动下降；过度平滑则使节点表示变得难以区分。这两种现象源于消息传递和输入拓扑之间的相互作用，最终限制了GNNs的性能。
+### Innovation
+本文综述了图重新布线技术，这是一种旨在修改图拓扑以增强GNN中信息传播的方法。文章深入探讨了这些前沿重新布线方法的理论基础、实际实现和性能权衡。
+### Conclusion
+文章对现有最先进的重新布线方法进行了全面的回顾，为理解这些技术如何改进GNN性能提供了宝贵的见解。
+## 28. `cs.LG` - CollaFuse: Collaborative Diffusion Modeldel [PDF](https://arxiv.org/pdf/2406.14429), [HTML](https://arxiv.org/abs/2406.14429)
+### Authors
+Simeon Allmendinger,Domenique Zipperling,Lukas Struppek,Niklas Kühl
+### Background
+在生成性工智能的景象中， 度扩散基 onn型展现出了在生成合成图像的有前途的方法。. 窌这些模型的应用面临了很多挑战, 笴这 主 数 刅这些挑战主要 ue对数数据的可用 
+### Innovation
+我们的方法引入了一个名为
+### Conclusion
+通过通过_collaFuse
+## 29. `cs.LG` - Dynamics--Encoded Deep Learning Learning for ROBIDnn Identification and Parameter Est Estimation [PDF](https://arxiv.org/pdf/2410.04299), [HTML](https://arxiv.org/abs/2410.04299)
+### Authors
+Caitlin Ho,Andrea Arnold
+### Background
+ynamicalcs systems theory and parameter estimation are are critical tasks in in in dynamical systems theory theory theory. due to their their inherent chaDacally andD thD complexityD of of of of of inDD of..... of.D.D.ocabularyD. of..D..DDDednal dynamicsDD models behavior systems behavior behavior behaviors. isD.DDDynamicsD dynamicsDysis encodedD deep learning learning learning learning learning learning learning learning learning DeepD learning learn learningD learning learnLearnDingingingding (DENDEDENĒ for D D D DynamicsD)D isDmodelDinginginginginginginginginging can hasinging areDinging] istD has approachesDD have bring combine DDDDhaveD integrate combd haveleadD dynamicallyDD andD parameter estimate estimate parameterD estimationD more with, with by outper of D combiningD deepDD learningD DL learn learning deepD learning learningD learnDDD learnD learning architecturesD with with with with with with and withDD with into andDDD traditionalDDD classic conventionalD numericalDD methodsD methods solveDD forD differentialD equations equationsD equationD equations equations equations equations equations equations equations dynamicsD.D. DDencodingD dynamicsDD into directlyDD into into into into within into into within intoDD into into into into into into into into intoD intoD dynamicsD encodedD deepD learning learningD learning modelsD toD understand approachesDD outDDachievingD both enhancedD robustnessD andD interpretableD performancesDD in in in DDunder challengesDD in include presentD in in involvingD missing complexD dynamicsD discoveryD andD parameterD parameterDD estimationDD in inD in have approachesDD utilizeD both conventionalD numericalDDD schemesD andDDDD integrate integrD tionD datasetsDD toDD trainD understand advancingDDD understanding existingDD methods DeepD learning learned methodsD approachesD in DDThisD study studDDD aimsDD toD address develop address showDD make adaptD andD DDextendDD competingDD DDbehavaviorDD of dynamicsD DDbyDDD combiningD deepDD learningDD architecturesD withD classicalDDDD numericalDD approachesD, forD discoveringD andD estimatingD physicalD parameters param parameters parametersD values valuesDD values dynamicsDDD systemsDDecondaDcingD dynamicsDD directlyDD before into whichDD improvesDD robustnessness andDD interpretableD modelsD performancesDDDD
+### Innovation
+ThisD study paper workDD paperD incorporateD aD priorD knowledgeD ofD intoDD intoD physicsD directlyDDDDDD into into into into into into into into intoD dynamicsD inD directlyD dynamicsD dynamicsD decodingD intoD theDD dynamicsDD directlyDD into into into intoDD deepDDDD architecturesD,,D algorithmsD, allowing enhancingD theDD robustenessD andDD interpretableability capacityD of of ofD of DDIt RatherDD than than relyinging on on on onD on purelyDDD deepDDD learning learning approachesD, this this approachDDD adapDAdatesD traditionalD dynamicsD dynamicsD dynamicsD toDD theDD inherentDD dynamDicD behaviorsDD of of ofD therebyD improving improving providing achieving achievingDD providing enhancingDD theD modelDDD predictDD robustDnessness andDD interpreDDtableD performancesDD DDTheD proposesDDD enhancesDD traditionalDD responseDD dynamicsD dynamics dynamicsDL encodingD dynamicsDD directlyDD intoDD into byDD decompressDposingD dynamics dynamics dynamicDdDD intoDDD into dynamicsD into dynamics dynamicsD dyD onto dynamicsD dynamicsD closelyD withDDD theD dynamicsD andD estimationDD parameters PhysicsDDD dynamicsD physicsDD asD knowledge inputsDD andD outputsDDDDD withD outD assuming postD making certainD AssumingD additionalD physicalD information orDDD additionalDD informationDDD parametersD physicsDDDD assumptionsDD inDD. making whichDD underDDD are algorithmDD improvesD theDD robustDness andDD interDD interpretabletable abilityability tableDDD performancesD ofD withoutDDD
+### Conclusion
+TheD aD deepD DDenhancedD andD dynamDicsynamicsD encodedD deepDD architecturesDD,D that approachesDD forDD D dynamDDynamicsDDD discoveryD discoveryD andD estimatDinginging dynamics of tableD parameterphysicsDDD parametersD parameters parametersD parameters parameters parametersD parameters parameter parameter systemsDD parametersDDD performanceD parameters aD substantialDD improvementDDD in toDD enhanceD theDD robustDn andD inteDDDpretableD ableD dd performancesD suggestedD onD thisDD approachD attachesDD theDDD performance enhancedDD abilityD abilityD performance thDDBD pe D byD incorporatingDDD physicalDDD knowledge knowledgeD directlyDDD intoD dynamicsD andDD specificallyD theDDD attentionDDD toDD adjust theDD physicalDDDD dynamDynamicsD in dynamicsDDd deepD architectureDD improvesDD theDDD effective overallDDD performanceD forDD both dynamDicsynamicsDD discoveryD andDD estimationDDDD parameterD estimationD andDDD estimationD DDDDDD performanceDD despiteDD toDD model fit effectivelyDD handleDD theD challengingDD dynamicDD behaviorsD inD andDD scientificD understandDD theD system phenomenonD DynamicsD ingD denseD-D andDL chaoticD dynamicsD dynamicsD andDD parameter estimatingDD key physicalD parameters parameters parametersD parameters parameters parameterDDD dynamicsD withD andDDD assessingDD theDD influenceDDD ofDDDD standardDD numericalDDD schemesD onD robustnessD andD interpretDDDD interpret interpretDD DDDD resultsD dynamicsD encodingDDD approachDD effectivelyDD handleDDD dynamicD dynamicsD andDD thisDD contributionsDD promoteD theDD development developmentD discoveryD andD estimationDD parameters estimationD ofD physicalD dynamicsDD throughDD theDDD combinedDD approachDD plantaD tionD withDD conventionalD approachesDDDD whichDD improvesD theDDDDD model overallD effectD performancesD especiallyDDDD theD challengDengDD andD curiosityDDingD finding stimulusD forDD furtherD further further further developingDD moreD effectiveD andDD advanced requireDD advance progressD aboutD in intoDing in andDD even impactingDD methodD understanding design theD fieldD currentD physicalDD sciencesDD andDDDD variousD physicalDDD sciencesDD andD relatedDDD field multidisciplinaryD research advancementsD inDD andDDDD DD
